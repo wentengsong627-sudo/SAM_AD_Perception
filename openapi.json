@@ -1,0 +1,895 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "A/D text segmentation + guarded single-instance tracking",
+    "version": "1.0.0",
+    "description": "One active session per process. Ordered frames, reliable-visible masks only, no video length limit. No depth/planning/flight control. Bearer authentication is required only when configured."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8850",
+      "description": "A default"
+    },
+    {
+      "url": "http://127.0.0.1:8851",
+      "description": "D default"
+    }
+  ],
+  "security": [
+    {},
+    {
+      "BearerAuth": []
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Loading/readiness and runtime identity",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/session": {
+      "post": {
+        "summary": "Create target session or explicitly replace own session",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request or PNG",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Busy/expired session, out-of-order/conflicting frame, changed image size",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Image/body too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Use application/json",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unsupported text/all-target request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Runtime error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Model loading or queue full",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Timeout: retry identical frame",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/frame": {
+      "post": {
+        "summary": "Predict next frame, or idempotently retry last frame",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FrameRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FrameResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request or PNG",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Busy/expired session, out-of-order/conflicting frame, changed image size",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Image/body too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Use application/json",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unsupported text/all-target request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Runtime error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Model loading or queue full",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Timeout: retry identical frame",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/hint": {
+      "post": {
+        "summary": "Mark current observation suspect and request reacquisition; preserve references",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HintRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HintResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request or PNG",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Busy/expired session, out-of-order/conflicting frame, changed image size",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Image/body too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Use application/json",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unsupported text/all-target request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Runtime error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Model loading or queue full",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Timeout: retry identical frame",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reset": {
+      "post": {
+        "summary": "Release current target session and its tracking memory",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionIdentity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResetResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request or PNG",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid bearer token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Busy/expired session, out-of-order/conflicting frame, changed image size",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Image/body too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Use application/json",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unsupported text/all-target request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Runtime error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Model loading or queue full",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Timeout: retry identical frame",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "required": [
+          "error",
+          "error_code"
+        ],
+        "properties": {
+          "error": {
+            "type": "string"
+          },
+          "error_code": {
+            "type": "string"
+          }
+        }
+      },
+      "SessionRequest": {
+        "type": "object",
+        "required": [
+          "text",
+          "owner"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "description": "Single target; e.g. dog or red car. D: <=14 MobileCLIP content tokens."
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "replace_session": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "SessionResponse": {
+        "type": "object",
+        "required": [
+          "session",
+          "backend",
+          "query",
+          "max_objects",
+          "sequence_start"
+        ],
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "backend": {
+            "enum": [
+              "A",
+              "D"
+            ]
+          },
+          "query": {
+            "type": "string"
+          },
+          "max_objects": {
+            "const": 1
+          },
+          "sequence_start": {
+            "const": 0
+          },
+          "idle_timeout_seconds": {
+            "type": "number"
+          }
+        }
+      },
+      "SessionIdentity": {
+        "type": "object",
+        "required": [
+          "session"
+        ],
+        "properties": {
+          "session": {
+            "type": "string"
+          }
+        }
+      },
+      "HintRequest": {
+        "type": "object",
+        "required": [
+          "session"
+        ],
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      },
+      "FrameRequest": {
+        "type": "object",
+        "required": [
+          "session",
+          "sequence",
+          "image_png"
+        ],
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Consecutive from 0. Retry last sequence with identical PNG and timestamp."
+          },
+          "timestamp_ns": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Echoed caller capture time; not used to infer a world coordinate or velocity."
+          },
+          "image_png": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "description": "Base64 PNG, no data URI prefix. Same dimensions for one session. Max edge4096, pixels8847360, JSON body16MiB."
+          }
+        }
+      },
+      "FrameResponse": {
+        "type": "object",
+        "required": [
+          "session",
+          "sequence",
+          "backend",
+          "mask_png",
+          "ids",
+          "states",
+          "phase",
+          "visible",
+          "image",
+          "bbox_xyxy"
+        ],
+        "properties": {
+          "api_version": {
+            "const": "1.0"
+          },
+          "session": {
+            "type": "string"
+          },
+          "sequence": {
+            "type": "integer"
+          },
+          "timestamp_ns": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "backend": {
+            "enum": [
+              "A",
+              "D"
+            ]
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "color_order": {
+                "const": "RGB"
+              }
+            }
+          },
+          "mask_png": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Base64 binary PNG (0/255) at input resolution. null means no reliable visible mask, including VERIFYING or LOST."
+          },
+          "mask_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "input_rgb_sha256": {
+            "type": "string"
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "visible_pixels": {
+            "type": "integer"
+          },
+          "bbox_xyxy": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 4,
+            "maxItems": 4,
+            "description": "[x1,y1,x2,y2], input pixels; right/bottom exclusive."
+          },
+          "bbox_convention": {
+            "const": "xyxy_pixels_max_exclusive"
+          },
+          "prediction_only": {
+            "const": false
+          },
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 1
+          },
+          "states": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "enum": [
+                    "TRACKING",
+                    "SUSPECT",
+                    "OCCLUDED",
+                    "LOST",
+                    "REACQUIRING",
+                    "VERIFYING"
+                  ]
+                }
+              ],
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "phase": {
+            "type": "string"
+          },
+          "server_model_ms": {
+            "type": "number",
+            "description": "Model/pipeline time including PNG mask encoding; excludes request upload, queueing, client decode and display."
+          },
+          "memory_updates": {
+            "type": "integer"
+          },
+          "identity_commits": {
+            "type": "integer"
+          },
+          "detection_calls": {
+            "type": "integer"
+          },
+          "sam_encoder_calls": {
+            "type": "integer"
+          },
+          "image_calls": {
+            "type": "integer"
+          },
+          "process_calls": {
+            "type": "integer"
+          }
+        }
+      },
+      "Health": {
+        "type": "object",
+        "required": [
+          "protocol",
+          "api_version",
+          "backend",
+          "status",
+          "pid",
+          "run_id"
+        ],
+        "properties": {
+          "protocol": {
+            "const": "flyco-text-sam-v1"
+          },
+          "api_version": {
+            "const": "1.0"
+          },
+          "api_revision": {
+            "type": "string"
+          },
+          "backend": {
+            "enum": [
+              "A",
+              "D"
+            ]
+          },
+          "status": {
+            "enum": [
+              "loading",
+              "ready",
+              "error"
+            ]
+          },
+          "busy": {
+            "type": "boolean"
+          },
+          "pid": {
+            "type": "integer"
+          },
+          "run_id": {
+            "type": "string"
+          },
+          "source_fingerprint": {
+            "type": "string"
+          },
+          "device": {
+            "type": "string"
+          },
+          "precision": {
+            "type": "string"
+          },
+          "loaded_modules": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "max_objects": {
+            "const": 1
+          }
+        }
+      },
+      "ResetResponse": {
+        "type": "object",
+        "properties": {
+          "reset": {
+            "const": true
+          }
+        }
+      },
+      "HintResponse": {
+        "type": "object",
+        "properties": {
+          "deferred": {
+            "const": true
+          },
+          "reference_ids": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "backend": {
+            "enum": [
+              "A",
+              "D"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

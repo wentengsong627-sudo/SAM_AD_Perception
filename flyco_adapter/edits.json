@@ -1,0 +1,454 @@
+{
+  "docker/overrides/perception_predictor/scripts/run_percept.sh": [
+    {
+      "start": 23,
+      "end": 23,
+      "insert": [
+        "SEGMENTATION_BACKEND=\"${FLYCO_SEGMENTATION_BACKEND:-native}\"\n",
+        "SEGMENTATION_ENDPOINT=\"${FLYCO_SEGMENTATION_ENDPOINT:-http://127.0.0.1:8820}\"\n"
+      ]
+    },
+    {
+      "start": 71,
+      "end": 71,
+      "insert": [
+        "  --segmentation-backend native|A|D\n",
+        "                          Select the original provider or the HTTP A/D adapter.\n",
+        "  --segmentation-endpoint URL\n",
+        "                          Reachable A/D model service URL (default port 8820).\n"
+      ]
+    },
+    {
+      "start": 126,
+      "end": 126,
+      "insert": [
+        "    --segmentation-backend) SEGMENTATION_BACKEND=\"$2\"; shift 2 ;;\n",
+        "    --segmentation-endpoint) SEGMENTATION_ENDPOINT=\"$2\"; shift 2 ;;\n"
+      ]
+    },
+    {
+      "start": 150,
+      "end": 150,
+      "insert": [
+        "\n",
+        "case \"$SEGMENTATION_BACKEND\" in native|A|D) ;; *) echo \"Invalid segmentation backend: $SEGMENTATION_BACKEND\" >&2; exit 2 ;; esac\n",
+        "if [[ \"$SEGMENTATION_ENDPOINT\" != http://* && \"$SEGMENTATION_ENDPOINT\" != https://* ]]; then\n",
+        "  echo \"Segmentation endpoint must be an HTTP(S) URL.\" >&2\n",
+        "  exit 2\n",
+        "fi\n"
+      ]
+    },
+    {
+      "start": 277,
+      "end": 277,
+      "insert": [
+        "PERCEPTION_CMD=\"$PERCEPTION_CMD segmentation_backend:=$SEGMENTATION_BACKEND segmentation_endpoint:=$(printf '%q' \"$SEGMENTATION_ENDPOINT\")\"\n"
+      ]
+    }
+  ],
+  "docker/overrides/perception_predictor/src/sam_tracking/launch/full_stack.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 34,
+      "end": 34,
+      "insert": [
+        "    <arg name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" />\n",
+        "    <arg name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" />\n"
+      ]
+    }
+  ],
+  "docker/overrides/perception_predictor/src/sam_tracking/launch/perception_stack.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 36,
+      "end": 36,
+      "insert": [
+        "    <arg name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" />\n",
+        "    <arg name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" />\n"
+      ]
+    }
+  ],
+  "docker/overrides/perception_predictor/src/sam_tracking/launch/tracking.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 19,
+      "end": 19,
+      "insert": [
+        "    <param name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" type=\"string\" />\n",
+        "    <param name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" type=\"string\" />\n"
+      ]
+    }
+  ],
+  "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/core/depth_guidance.py": [
+    {
+      "start": 179,
+      "end": 179,
+      "insert": [
+        "\n",
+        "    def note_reinit_deferred(self, reason):\n",
+        "        \"\"\"Throttle a recovery request without counting it as verified recovery.\"\"\"\n",
+        "        self._last_reinit_frame = self._frame_index\n",
+        "        self.last_reinit_reason = str(reason or \"\") + \"_deferred\"\n"
+      ]
+    }
+  ],
+  "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/core/tracking_pipeline.py": [
+    {
+      "start": 183,
+      "end": 185,
+      "insert": [
+        "        deferred = bool(getattr(self.provider, \"last_reinit_deferred\", False))\n",
+        "        if deferred:\n",
+        "            self.depth_guidance.note_reinit_deferred(decision.reason)\n",
+        "        else:\n",
+        "            self.depth_guidance.note_reinitialized(decision.reason)\n",
+        "            self.reset_runtime_state()\n"
+      ]
+    },
+    {
+      "start": 186,
+      "end": 187,
+      "insert": [
+        "            \"state\": \"reinit_pending\" if deferred else \"reinitialized\",\n"
+      ]
+    },
+    {
+      "start": 225,
+      "end": 226,
+      "insert": [
+        "            if reinit_result is not None and reinit_result[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    },
+    {
+      "start": 244,
+      "end": 245,
+      "insert": [
+        "            if reinit_result is not None and reinit_result[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    },
+    {
+      "start": 262,
+      "end": 263,
+      "insert": [
+        "        if reinit_result is not None and reinit_result[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    }
+  ],
+  "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/ros/tracking_manager.py": [
+    {
+      "start": 38,
+      "end": 42,
+      "insert": []
+    },
+    {
+      "start": 44,
+      "end": 45,
+      "insert": [
+        "from sam_tracking.providers.factory import make_camera_provider\n"
+      ]
+    },
+    {
+      "start": 76,
+      "end": 95,
+      "insert": [
+        "        self.provider = make_camera_provider(\n",
+        "            backend=rospy.get_param(\"~segmentation_backend\", \"native\"),\n",
+        "            runtime_params=self.runtime_params,\n",
+        "            endpoint=rospy.get_param(\"~segmentation_endpoint\", \"http://127.0.0.1:8820\"),\n"
+      ]
+    },
+    {
+      "start": 649,
+      "end": 649,
+      "insert": [
+        "        if hasattr(self.provider, \"begin_frame\"):\n",
+        "            self.provider.begin_frame((int(img_msg.header.stamp.secs), int(img_msg.header.stamp.nsecs)))\n"
+      ]
+    },
+    {
+      "start": 687,
+      "end": 688,
+      "insert": [
+        "        if tracked[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    },
+    {
+      "start": 689,
+      "end": 690,
+      "insert": [
+        "                \"Depth guidance provider action=%s: reason=%s, bbox=%s, depth_area=%s, consistency=%s\",\n",
+        "                tracked[\"state\"],\n"
+      ]
+    }
+  ],
+  "docker/run.sh": [
+    {
+      "start": 40,
+      "end": 40,
+      "insert": [
+        "  -e \"FLYCO_SEGMENTATION_BACKEND=${FLYCO_SEGMENTATION_BACKEND:-native}\"\n",
+        "  -e \"FLYCO_SEGMENTATION_ENDPOINT=${FLYCO_SEGMENTATION_ENDPOINT:-http://127.0.0.1:8820}\"\n"
+      ]
+    }
+  ],
+  "perception_predictor/scripts/run_percept.sh": [
+    {
+      "start": 23,
+      "end": 23,
+      "insert": [
+        "SEGMENTATION_BACKEND=\"${FLYCO_SEGMENTATION_BACKEND:-native}\"\n",
+        "SEGMENTATION_ENDPOINT=\"${FLYCO_SEGMENTATION_ENDPOINT:-http://127.0.0.1:8820}\"\n"
+      ]
+    },
+    {
+      "start": 71,
+      "end": 71,
+      "insert": [
+        "  --segmentation-backend native|A|D\n",
+        "                          Select the original provider or the HTTP A/D adapter.\n",
+        "  --segmentation-endpoint URL\n",
+        "                          Reachable A/D model service URL (default port 8820).\n"
+      ]
+    },
+    {
+      "start": 126,
+      "end": 126,
+      "insert": [
+        "    --segmentation-backend) SEGMENTATION_BACKEND=\"$2\"; shift 2 ;;\n",
+        "    --segmentation-endpoint) SEGMENTATION_ENDPOINT=\"$2\"; shift 2 ;;\n"
+      ]
+    },
+    {
+      "start": 150,
+      "end": 150,
+      "insert": [
+        "\n",
+        "case \"$SEGMENTATION_BACKEND\" in native|A|D) ;; *) echo \"Invalid segmentation backend: $SEGMENTATION_BACKEND\" >&2; exit 2 ;; esac\n",
+        "if [[ \"$SEGMENTATION_ENDPOINT\" != http://* && \"$SEGMENTATION_ENDPOINT\" != https://* ]]; then\n",
+        "  echo \"Segmentation endpoint must be an HTTP(S) URL.\" >&2\n",
+        "  exit 2\n",
+        "fi\n"
+      ]
+    },
+    {
+      "start": 277,
+      "end": 277,
+      "insert": [
+        "PERCEPTION_CMD=\"$PERCEPTION_CMD segmentation_backend:=$SEGMENTATION_BACKEND segmentation_endpoint:=$(printf '%q' \"$SEGMENTATION_ENDPOINT\")\"\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/launch/full_stack.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 34,
+      "end": 34,
+      "insert": [
+        "    <arg name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" />\n",
+        "    <arg name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" />\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/launch/perception_stack.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 36,
+      "end": 36,
+      "insert": [
+        "    <arg name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" />\n",
+        "    <arg name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" />\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/launch/tracking.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 19,
+      "end": 19,
+      "insert": [
+        "    <param name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" type=\"string\" />\n",
+        "    <param name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" type=\"string\" />\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/launch/tracking_with_prompt.launch": [
+    {
+      "start": 2,
+      "end": 2,
+      "insert": [
+        "  <arg name=\"segmentation_backend\" default=\"native\" />\n",
+        "  <arg name=\"segmentation_endpoint\" default=\"http://127.0.0.1:8820\" />\n"
+      ]
+    },
+    {
+      "start": 12,
+      "end": 12,
+      "insert": [
+        "    <arg name=\"segmentation_backend\" value=\"$(arg segmentation_backend)\" />\n",
+        "    <arg name=\"segmentation_endpoint\" value=\"$(arg segmentation_endpoint)\" />\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/src/sam_tracking/core/depth_guidance.py": [
+    {
+      "start": 179,
+      "end": 179,
+      "insert": [
+        "\n",
+        "    def note_reinit_deferred(self, reason):\n",
+        "        \"\"\"Throttle a recovery request without counting it as verified recovery.\"\"\"\n",
+        "        self._last_reinit_frame = self._frame_index\n",
+        "        self.last_reinit_reason = str(reason or \"\") + \"_deferred\"\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/src/sam_tracking/core/tracking_pipeline.py": [
+    {
+      "start": 183,
+      "end": 185,
+      "insert": [
+        "        deferred = bool(getattr(self.provider, \"last_reinit_deferred\", False))\n",
+        "        if deferred:\n",
+        "            self.depth_guidance.note_reinit_deferred(decision.reason)\n",
+        "        else:\n",
+        "            self.depth_guidance.note_reinitialized(decision.reason)\n",
+        "            self.reset_runtime_state()\n"
+      ]
+    },
+    {
+      "start": 186,
+      "end": 187,
+      "insert": [
+        "            \"state\": \"reinit_pending\" if deferred else \"reinitialized\",\n"
+      ]
+    },
+    {
+      "start": 225,
+      "end": 226,
+      "insert": [
+        "            if reinit_result is not None and reinit_result[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    },
+    {
+      "start": 244,
+      "end": 245,
+      "insert": [
+        "            if reinit_result is not None and reinit_result[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    },
+    {
+      "start": 262,
+      "end": 263,
+      "insert": [
+        "        if reinit_result is not None and reinit_result[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/src/sam_tracking/providers/__init__.py": [
+    {
+      "start": 0,
+      "end": 1,
+      "insert": [
+        "\"\"\"Keep the native public import lazy so HTTP backends need no SAM2 toolkit.\"\"\"\n",
+        "\n",
+        "__all__ = [\"Sam2CameraProvider\"]\n",
+        "\n",
+        "\n",
+        "def __getattr__(name):\n",
+        "    if name == \"Sam2CameraProvider\":\n",
+        "        from .sam2_camera_provider import Sam2CameraProvider\n",
+        "        return Sam2CameraProvider\n",
+        "    raise AttributeError(name)\n"
+      ]
+    }
+  ],
+  "perception_predictor/src/sam_tracking/src/sam_tracking/ros/tracking_manager.py": [
+    {
+      "start": 38,
+      "end": 42,
+      "insert": []
+    },
+    {
+      "start": 44,
+      "end": 45,
+      "insert": [
+        "from sam_tracking.providers.factory import make_camera_provider\n"
+      ]
+    },
+    {
+      "start": 76,
+      "end": 95,
+      "insert": [
+        "        self.provider = make_camera_provider(\n",
+        "            backend=rospy.get_param(\"~segmentation_backend\", \"native\"),\n",
+        "            runtime_params=self.runtime_params,\n",
+        "            endpoint=rospy.get_param(\"~segmentation_endpoint\", \"http://127.0.0.1:8820\"),\n"
+      ]
+    },
+    {
+      "start": 649,
+      "end": 649,
+      "insert": [
+        "        if hasattr(self.provider, \"begin_frame\"):\n",
+        "            self.provider.begin_frame((int(img_msg.header.stamp.secs), int(img_msg.header.stamp.nsecs)))\n"
+      ]
+    },
+    {
+      "start": 687,
+      "end": 688,
+      "insert": [
+        "        if tracked[\"state\"] in (\"reinitialized\", \"reinit_pending\"):\n"
+      ]
+    },
+    {
+      "start": 689,
+      "end": 690,
+      "insert": [
+        "                \"Depth guidance provider action=%s: reason=%s, bbox=%s, depth_area=%s, consistency=%s\",\n",
+        "                tracked[\"state\"],\n"
+      ]
+    }
+  ]
+}

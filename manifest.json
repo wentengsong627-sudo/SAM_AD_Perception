@@ -1,0 +1,2599 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 52,
+      "sha256": "4be9715edd934b7bd8dac2ce1ffde7aa59aace23e0c6adacd0a04b1a2f279d97"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 155,
+      "sha256": "ae85d8dad918003785d8c5d63d5c8c8cc00bf459613a128b52e067e59558789e"
+    },
+    {
+      "path": "LICENSES/EfficientSAM3-pyproject.toml",
+      "bytes": 1830,
+      "sha256": "13765f94fe82f05b9498e616c5090baf53449e276283843f6001fca784f8e879"
+    },
+    {
+      "path": "LICENSES/GroundingDINO-LICENSE.txt",
+      "bytes": 11355,
+      "sha256": "b403c98ec1ffaccb0124632592a3d99642cddc3031ca412b402568e6c06c202a"
+    },
+    {
+      "path": "LICENSES/NOTICE.txt",
+      "bytes": 674,
+      "sha256": "fd1819a856291fbd598a6c3a8cc2262ba10375fcfd48809fc7de6abc0098993f"
+    },
+    {
+      "path": "LICENSES/SAM2-LICENSE.txt",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "LICENSES/SAM2-cctorch-LICENSE.txt",
+      "bytes": 1595,
+      "sha256": "b4d90f9c25b30d3fbd412f50dd4204f17e16af2813f4f3fe25b2f0d0f97e35fd"
+    },
+    {
+      "path": "LICENSES/SAM3-Meta-SAM-LICENSE.txt",
+      "bytes": 7414,
+      "sha256": "67f67e15efa517e0f67f59ff2d2f603a624da5d2f5458b0c5b366ccd66bb3eea"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3685,
+      "sha256": "26442df5dfbdb0b3ece9a8acfacc2be19eb305ad7f301861cfeccdf6a1c0ea1f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 585,
+      "sha256": "d2100a5d4f64278eb11de10648fc6b32daf74c3b916e47a2cc174ae4892333a3"
+    },
+    {
+      "path": "assets.lock.json",
+      "bytes": 90129,
+      "sha256": "009d45c913b471784d733d56157c275e4297bf1fc144bbd90085d622e0e92769"
+    },
+    {
+      "path": "docs/A和D感知模块通俗接入说明.docx",
+      "bytes": 49683,
+      "sha256": "a386e47c03d5ba3c13b14a66cd08d444b141157323711db53b4a120c74fcbd6a"
+    },
+    {
+      "path": "docs/接入指南.md",
+      "bytes": 19456,
+      "sha256": "75f35d8b38c6b643a81464435117273ced5a59cc0a21b5c73d6d47ee81f98c0b"
+    },
+    {
+      "path": "examples/minimal.py",
+      "bytes": 1119,
+      "sha256": "d5785c529968c7b6f7ef936c81a7ef78df123d6f4f9723c3bb68b8c505238035"
+    },
+    {
+      "path": "examples/video_client.py",
+      "bytes": 2995,
+      "sha256": "b91da93eb9b8199ca825a91fe5ce7f1f1b88c9be6db487069bb610dd6c388e81"
+    },
+    {
+      "path": "flyco_adapter/FlyCo-LICENSE.txt",
+      "bytes": 3709,
+      "sha256": "35d2bdd0bb669d59c4cbf4873fb1fad2bfe88dea4083b628bde959eae9a83015"
+    },
+    {
+      "path": "flyco_adapter/edits.json",
+      "bytes": 14564,
+      "sha256": "3d31724f617216d50bfb65a9311db375a2d69adf8c0a03ebfa3bdc818d8f3138"
+    },
+    {
+      "path": "flyco_adapter/install_into_flyco.py",
+      "bytes": 5632,
+      "sha256": "ff1795e57ce372ec17a03e3844d914d0effb95cdac0b7f1ebe01629014e20916"
+    },
+    {
+      "path": "flyco_adapter/manifest.json",
+      "bytes": 6683,
+      "sha256": "3a7e460ec3a5bd0be0407bc38d0733f4898be73ae744710d62892caf1fb6fa9b"
+    },
+    {
+      "path": "flyco_adapter/new_files/docker/overrides/perception_predictor/src/sam_tracking/launch/tracking_with_prompt.launch",
+      "bytes": 1691,
+      "sha256": "2018ea90ea6d77c7e281f9f6e184b7924289cffdd37ea52e4263f5081702ffbf"
+    },
+    {
+      "path": "flyco_adapter/new_files/docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/providers/__init__.py",
+      "bytes": 302,
+      "sha256": "795d17f947c6495fa2810cc1d8cd357bf50214c6885af7ee2f8e474349f954ef"
+    },
+    {
+      "path": "flyco_adapter/new_files/docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/providers/factory.py",
+      "bytes": 1542,
+      "sha256": "6ad791b8e5e59225b7f6fcaebc02c1e9420efb562fe1ef0879b7188a8baeb623"
+    },
+    {
+      "path": "flyco_adapter/new_files/docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/providers/http_text_sam_provider.py",
+      "bytes": 9327,
+      "sha256": "79c0d3fc62347dbde4daf08957efbd7e79b4e1ea97d94b97429688c8a312332d"
+    },
+    {
+      "path": "flyco_adapter/new_files/perception_predictor/src/sam_tracking/src/sam_tracking/providers/factory.py",
+      "bytes": 1542,
+      "sha256": "6ad791b8e5e59225b7f6fcaebc02c1e9420efb562fe1ef0879b7188a8baeb623"
+    },
+    {
+      "path": "flyco_adapter/new_files/perception_predictor/src/sam_tracking/src/sam_tracking/providers/http_text_sam_provider.py",
+      "bytes": 9327,
+      "sha256": "79c0d3fc62347dbde4daf08957efbd7e79b4e1ea97d94b97429688c8a312332d"
+    },
+    {
+      "path": "models/efficientsam3/efficientsam3_tinyvit.pt",
+      "bytes": 492809614,
+      "sha256": "3a52c42f975a9562cb656a57aebb60314d7871c3956e4955c91364a8fe3875dc",
+      "backend": "D",
+      "url": "https://huggingface.co/Simon7108528/EfficientSAM3/resolve/85b05896928f974e308f889d7ccb2eefc069de98/efficientsam3_tinyvit.pt"
+    },
+    {
+      "path": "models/grounding-dino-tiny/config.json",
+      "bytes": 1644,
+      "sha256": "eec82c5ab66e16df12a9a212e68ac011779927c2536cf9078658e35d85f0c67a",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/config.json"
+    },
+    {
+      "path": "models/grounding-dino-tiny/model.safetensors",
+      "bytes": 689359096,
+      "sha256": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/model.safetensors"
+    },
+    {
+      "path": "models/grounding-dino-tiny/preprocessor_config.json",
+      "bytes": 457,
+      "sha256": "8454179ba95e2ad22947835aad7b45862a601fc0055ab88bf1ee70892d3aea60",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/preprocessor_config.json"
+    },
+    {
+      "path": "models/grounding-dino-tiny/special_tokens_map.json",
+      "bytes": 125,
+      "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/special_tokens_map.json"
+    },
+    {
+      "path": "models/grounding-dino-tiny/tokenizer.json",
+      "bytes": 711396,
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/tokenizer.json"
+    },
+    {
+      "path": "models/grounding-dino-tiny/tokenizer_config.json",
+      "bytes": 1237,
+      "sha256": "d40ab645b68211910b9170d22433d43186a6ec8ee6fd10ba170524b25bf4fb56",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/tokenizer_config.json"
+    },
+    {
+      "path": "models/grounding-dino-tiny/vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "backend": "A",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/main/vocab.txt"
+    },
+    {
+      "path": "models/sam2.1_hiera_tiny.pt",
+      "bytes": 156008466,
+      "sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+      "backend": "A",
+      "url": "https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_tiny.pt"
+    },
+    {
+      "path": "openapi.json",
+      "bytes": 23811,
+      "sha256": "c5ce3c5170d8a75908350234e3cfbd851bbe58e96a6bd08a51428800c42b5c84"
+    },
+    {
+      "path": "prepare_assets.py",
+      "bytes": 5232,
+      "sha256": "3658250d775fcbe00a6d0dd6f33dc529255e33c59dd13c24a6b2a17468229718"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 880,
+      "sha256": "7d968f473824d845e884b60f446d71a721e59eebab82b2ed773d9cde97e380f1"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 316,
+      "sha256": "3b6a135f58a9402c3c75d57969c5ccfde704bf9def9b6b4089c79f7a886e3704"
+    },
+    {
+      "path": "requirements-client.txt",
+      "bytes": 107,
+      "sha256": "adbdea8f4ecc163324e393c3288eed7422e7ed7438149614c245ec8d93a96f8e"
+    },
+    {
+      "path": "requirements-server.txt",
+      "bytes": 463,
+      "sha256": "ca028f4bbbe7013028202cd3591fc8ed3942ca9677cb46d112f4598875624a54"
+    },
+    {
+      "path": "runtime_api/__init__.py",
+      "bytes": 50,
+      "sha256": "e0c713b2f39bddf07f185b03615acd600a5355ac8970550d62b4fd22f2b29fd4"
+    },
+    {
+      "path": "runtime_api/inference.py",
+      "bytes": 8080,
+      "sha256": "982d9dc557aae5d089d4279d134e7fab8d8d204563603ad92868843de8070658"
+    },
+    {
+      "path": "runtime_api/models.py",
+      "bytes": 4765,
+      "sha256": "add6b133f6a394ef02afa795ceb046f7176673e07b5f9c223d1be3e0e6dec907"
+    },
+    {
+      "path": "runtime_app/abc_sam/__init__.py",
+      "bytes": 81,
+      "sha256": "d203513df3ace8f08a630055421ba30b035adaebc8635a226bc9983886453b95"
+    },
+    {
+      "path": "runtime_app/abc_sam/image_tracking.py",
+      "bytes": 5625,
+      "sha256": "ab4a05e821f6a35aa9a047d247b76b7506fefc37d5fa968b929d012bf384b464"
+    },
+    {
+      "path": "runtime_app/abc_sam/light_models.py",
+      "bytes": 4261,
+      "sha256": "84c9f4927d6547ad75df901efd538544cb6d722acc54fd796a1a5b221a44080b"
+    },
+    {
+      "path": "runtime_app/abc_sam/runtime_cache.py",
+      "bytes": 1432,
+      "sha256": "84449ae0f84616e0d72b9b256c4e7452c3c8b4ee19406a76c35ae7609a1268e4"
+    },
+    {
+      "path": "runtime_app/text_sam/__init__.py",
+      "bytes": 55,
+      "sha256": "e7539949bd05dfc74f72ea92f5794e000c8cf8aeacca64b74ac6edfae37cc97b"
+    },
+    {
+      "path": "runtime_app/text_sam/commands.py",
+      "bytes": 4309,
+      "sha256": "74a145d9359317df26884efbc7e1319cdfa81feec848e0e65e72adbf9076aebd"
+    },
+    {
+      "path": "runtime_app/text_sam/fast_grounding.py",
+      "bytes": 4045,
+      "sha256": "6148eb0c154176593bdcde44a806a9d663a9d55f9b65fefb2011873e26c86d7a"
+    },
+    {
+      "path": "runtime_app/text_sam/identity.py",
+      "bytes": 3311,
+      "sha256": "300e6eb458becbc9195a59931ee974f9e1007980120cbe00853640449198772f"
+    },
+    {
+      "path": "runtime_app/text_sam/motion.py",
+      "bytes": 1409,
+      "sha256": "579bf9c946328860e98832217e6161aedd31e977c7996b4fb8eebeeaa5523c5b"
+    },
+    {
+      "path": "runtime_app/text_sam/pipeline.py",
+      "bytes": 18771,
+      "sha256": "02fe3bccde219de62dab4b364756f1d7feadd78af35d2c9f9bd10e058db95a97"
+    },
+    {
+      "path": "runtime_app/text_sam/runtime.py",
+      "bytes": 2264,
+      "sha256": "129a59e34581625f0f568855deb050734478e79d49c9f89c86e2721bc1d1a980"
+    },
+    {
+      "path": "runtime_app/text_sam/targets.py",
+      "bytes": 4598,
+      "sha256": "369815b6031eba4410795e4def6c32df635f93d3862952869ebfb9a7aa23fa11"
+    },
+    {
+      "path": "runtime_app/text_sam/trust.py",
+      "bytes": 3625,
+      "sha256": "e48907027110c8120b593d005db276c2386b9f18a75d5a2526ba9ff1b1d909a8"
+    },
+    {
+      "path": "runtime_app/text_sam/vision.py",
+      "bytes": 21593,
+      "sha256": "80dd36890316d759086accc1cc7dd19363fc83e0862e8daaf33fe7dce9eda6f9"
+    },
+    {
+      "path": "sam2-official/LICENSE",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "LICENSE"
+    },
+    {
+      "path": "sam2-official/LICENSE_cctorch",
+      "bytes": 1595,
+      "sha256": "b4d90f9c25b30d3fbd412f50dd4204f17e16af2813f4f3fe25b2f0d0f97e35fd",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "LICENSE_cctorch"
+    },
+    {
+      "path": "sam2-official/README.md",
+      "bytes": 16473,
+      "sha256": "8187448c95ac50ea30d9c591e550fd2c07620269387489cf9b46132fb178bd55",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "README.md"
+    },
+    {
+      "path": "sam2-official/pyproject.toml",
+      "bytes": 126,
+      "sha256": "1585b90b808aa18902556732f5914fbd601a5b07beb8c4fdf32a2a02086feedc",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "pyproject.toml"
+    },
+    {
+      "path": "sam2-official/sam2/__init__.py",
+      "bytes": 406,
+      "sha256": "fd116e43c17587fce9d5cc7de043dd183b29e4af5c369bd09ca121ffb03755f0",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/__init__.py"
+    },
+    {
+      "path": "sam2-official/sam2/automatic_mask_generator.py",
+      "bytes": 18915,
+      "sha256": "b888136cfcd40f04aedcfccf56516f778038414ba9ae2bd41b3725a04ca89cc3",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/automatic_mask_generator.py"
+    },
+    {
+      "path": "sam2-official/sam2/benchmark.py",
+      "bytes": 2903,
+      "sha256": "eba42a58c402afb076df36a2ec83b4e184d766b0aa0d986a330b0f0ee25ed793",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/benchmark.py"
+    },
+    {
+      "path": "sam2-official/sam2/build_sam.py",
+      "bytes": 6579,
+      "sha256": "d962a9ebc5b65aa03a8d74159742b9993b8affb44b205ba78685db8d199dc3a7",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/build_sam.py"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2.1/sam2.1_hiera_b+.yaml",
+      "bytes": 3766,
+      "sha256": "ef47e14197a65c1fd542e1862270ee851c2b15e571b2c58ceb0329d15be33769",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2.1/sam2.1_hiera_b+.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2.1/sam2.1_hiera_l.yaml",
+      "bytes": 3918,
+      "sha256": "4c9983b04adddc5e4586c7809a4c21dd90975bccc5026aea3c22232783c18112",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2.1/sam2.1_hiera_l.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2.1/sam2.1_hiera_s.yaml",
+      "bytes": 3880,
+      "sha256": "592306d059a2df49898fefcb939c11abc9dfc8fd962bc77c31d132e68cb4320a",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2.1/sam2.1_hiera_s.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2.1/sam2.1_hiera_t.yaml",
+      "bytes": 3976,
+      "sha256": "9eb1c5e9db577925464492ccbbf6810731bcbbde31325fb8d297d78c3eb5d9dc",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2.1/sam2.1_hiera_t.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2.1_training/sam2.1_hiera_b+_MOSE_finetune.yaml",
+      "bytes": 11595,
+      "sha256": "a3e2653cc96fbdde7a498da3d48e9db69d04baa9bfaab83ffde68a0022289361",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2.1_training/sam2.1_hiera_b+_MOSE_finetune.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2/sam2_hiera_b+.yaml",
+      "bytes": 3661,
+      "sha256": "58ae5539466e1da4b856346427a29a8f3675a0c1132ec0b81bc3911ee1775ce9",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2/sam2_hiera_b+.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2/sam2_hiera_l.yaml",
+      "bytes": 3813,
+      "sha256": "32d7bf07be4e3717985f76052f740b90e4cfaf45588621b286de24962c2d2fd3",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2/sam2_hiera_l.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2/sam2_hiera_s.yaml",
+      "bytes": 3775,
+      "sha256": "03d12a4ac21f82eb1e9d5c3c831983986b05812c861b5893a02bc3bdd9ecac4e",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2/sam2_hiera_s.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/configs/sam2/sam2_hiera_t.yaml",
+      "bytes": 3871,
+      "sha256": "829706a768d641fa8644e194d1d69322af5d837b099e8731af1476227f7c5691",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/configs/sam2/sam2_hiera_t.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/csrc/connected_components.cu",
+      "bytes": 8097,
+      "sha256": "cf9bb101204537262ad46111828d365f67c88726b31efc16af13c8bfbf77a553",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/csrc/connected_components.cu"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/__init__.py",
+      "bytes": 202,
+      "sha256": "9f2c336d52111ef51bae5b4959d8941968e9e26638c681de5388c58d3080624d",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/__init__.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/backbones/__init__.py",
+      "bytes": 202,
+      "sha256": "9f2c336d52111ef51bae5b4959d8941968e9e26638c681de5388c58d3080624d",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/backbones/__init__.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/backbones/hieradet.py",
+      "bytes": 10320,
+      "sha256": "e793e2a2545cf4e2dedcd0d0654e6cd6b118179d94d5a5eeffa29b7cb6b96fd0",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/backbones/hieradet.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/backbones/image_encoder.py",
+      "bytes": 4840,
+      "sha256": "5920c2ad317cebad34a747f10426ece14303b59a813ae79c5e95dc6b5d171663",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/backbones/image_encoder.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/backbones/utils.py",
+      "bytes": 3100,
+      "sha256": "967625e0701b240c0169574845bc18e61e18a41c128198239363bc8b96fdc662",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/backbones/utils.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/memory_attention.py",
+      "bytes": 5678,
+      "sha256": "4c82b71c2cd518011cdb4341c75f18e6b8b6de411de96e4aec424bfe9ed9a0be",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/memory_attention.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/memory_encoder.py",
+      "bytes": 5838,
+      "sha256": "2803cd030e6a067978f272cb35c24b0690b1e7eecb51fdbd224a74cab6f31e3f",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/memory_encoder.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/position_encoding.py",
+      "bytes": 9219,
+      "sha256": "e19abfd3a2758755d9182cf0355bdfa28b6db61851e31546fefee9ca27f27ebf",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/position_encoding.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/sam/__init__.py",
+      "bytes": 202,
+      "sha256": "9f2c336d52111ef51bae5b4959d8941968e9e26638c681de5388c58d3080624d",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/sam/__init__.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/sam/mask_decoder.py",
+      "bytes": 12952,
+      "sha256": "b53d185daee38021270aa57f607281418b5544bfe549d91abd6dbcea48420432",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/sam/mask_decoder.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/sam/prompt_encoder.py",
+      "bytes": 7743,
+      "sha256": "4dd05bad47c1b0a16cc6f4c095b877433e7d96f80160dc06f4b7f9559b0c3b3b",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/sam/prompt_encoder.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/sam/transformer.py",
+      "bytes": 11072,
+      "sha256": "47f32206d8286c0538ed789273e607214a3e41892d3c907a8e7a6cfdd4240ca0",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/sam/transformer.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/sam2_base.py",
+      "bytes": 47892,
+      "sha256": "5ac8be9a6e9935d2f4ee6efa1edff87915aa7cdd7da1207e1be21af6462093f2",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/sam2_base.py"
+    },
+    {
+      "path": "sam2-official/sam2/modeling/sam2_utils.py",
+      "bytes": 13496,
+      "sha256": "74175905345361fe8fd2bbf3aecd772552b5b1c68b6cf5081953230c8fd82c10",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/modeling/sam2_utils.py"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_hiera_b+.yaml",
+      "bytes": 31,
+      "sha256": "212887bd5b1d90c07a3439a911593ec6ec8a586cce0b12799f1ebec38bbe401d",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_hiera_b+.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_hiera_l.yaml",
+      "bytes": 30,
+      "sha256": "0e313563f8f467c382c81192a0e2aff4624dda2b23218f1a78df30ebe4b4eb1a",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_hiera_l.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_hiera_s.yaml",
+      "bytes": 30,
+      "sha256": "6fff1ab952d4ff7bc4bf8bb480f6283bcf12a763057f5bb697b25151a20f7608",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_hiera_s.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_hiera_t.yaml",
+      "bytes": 30,
+      "sha256": "4ba0a249a1da9a6cc4070d47894808f206f67249d0c6fda21c6280af692dd77e",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_hiera_t.yaml"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_image_predictor.py",
+      "bytes": 20403,
+      "sha256": "edd7281ec91bea1c5c9ee498b09c823b534fe31e36fc3dfbe7696e6d7a216bef",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_image_predictor.py"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_video_predictor.py",
+      "bytes": 60144,
+      "sha256": "1e2de167d91974e96de21b51237e20f1a30f9b37fae706c854974386b4800d50",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_video_predictor.py"
+    },
+    {
+      "path": "sam2-official/sam2/sam2_video_predictor_legacy.py",
+      "bytes": 59949,
+      "sha256": "ec0992b44ac2bdc3db0f0693e94b15e3e813e30ab5f3f57f878857043161e1d4",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/sam2_video_predictor_legacy.py"
+    },
+    {
+      "path": "sam2-official/sam2/utils/__init__.py",
+      "bytes": 202,
+      "sha256": "9f2c336d52111ef51bae5b4959d8941968e9e26638c681de5388c58d3080624d",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/utils/__init__.py"
+    },
+    {
+      "path": "sam2-official/sam2/utils/amg.py",
+      "bytes": 13190,
+      "sha256": "15649a414e87d38b2863f8408b16be1e1c16b2c4f9faef154e108d81f194e438",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/utils/amg.py"
+    },
+    {
+      "path": "sam2-official/sam2/utils/misc.py",
+      "bytes": 13439,
+      "sha256": "ff2d441d16cedd6cc50a4bcdcbff29a1cb4d46d40c1123c3a471f265bbed3b0e",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/utils/misc.py"
+    },
+    {
+      "path": "sam2-official/sam2/utils/transforms.py",
+      "bytes": 5003,
+      "sha256": "c200d1931d501ea70cd73a84128dfa20f92b3f1f4e2d74760d032410fda0d0be",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "sam2/utils/transforms.py"
+    },
+    {
+      "path": "sam2-official/setup.py",
+      "bytes": 5225,
+      "sha256": "5e8fa9eea2d742bcaccbfe054839cf8760b5fea28cde49e8bc43e4e03eb8c7c6",
+      "backend": "A",
+      "archive": "sam2",
+      "member": "setup.py"
+    },
+    {
+      "path": "sam_ad/__init__.py",
+      "bytes": 232,
+      "sha256": "608858690e023268504195142bad03bc294ade0b79cca5f91792556962681ea9"
+    },
+    {
+      "path": "sam_ad/client.py",
+      "bytes": 9545,
+      "sha256": "0a0d37872f95f7c556cf12dd78504ae426ed96f9afcd30b7e0daf24fc792f725"
+    },
+    {
+      "path": "sam_ad/contract.py",
+      "bytes": 6819,
+      "sha256": "3060f8bd343c10d7d44744af50f48c338628b175472824fae893507bd8095eb2"
+    },
+    {
+      "path": "sam_ad/doctor.py",
+      "bytes": 2735,
+      "sha256": "629199f8af2c4e62f5544e5628227af0891facf041cf9c2444a52b288a6fd64e"
+    },
+    {
+      "path": "sam_ad/server.py",
+      "bytes": 10331,
+      "sha256": "efe293ffc6447d620885e22f43bce0e64b291ce7c77d990843bb6aba1f55c3e8"
+    },
+    {
+      "path": "sdk/sam_ad_client-1.0.0-py3-none-any.whl",
+      "bytes": 4198,
+      "sha256": "c63ddd3d64086bc322199baa32b5291630ff6c0ef35cf7f7cdfacdfe87360266"
+    },
+    {
+      "path": "setup_linux.sh",
+      "bytes": 900,
+      "sha256": "a61184251fa494b4a4dc2deb333d5cd950fd33c1a1691e59b0815b1ef44d4299"
+    },
+    {
+      "path": "setup_windows.ps1",
+      "bytes": 1466,
+      "sha256": "df79b38b32920466cb935429f2c63bd9bdb8bff8a036e94e376901db01d12416"
+    },
+    {
+      "path": "start_A.ps1",
+      "bytes": 322,
+      "sha256": "9f967495a0e09b982c8e94cd1e1018ceb1b3a03572350ceab522dbc9a54dfa44"
+    },
+    {
+      "path": "start_A.sh",
+      "bytes": 199,
+      "sha256": "d76f52ae39b00d87e105bf9b303e77de873dc6d4be36833bd6b7c4fc2724cdb7"
+    },
+    {
+      "path": "start_D.ps1",
+      "bytes": 322,
+      "sha256": "a6e4aa04c2606d4a07fb74b52b080e71a710abdf776ebf893f467a5dc3712d11"
+    },
+    {
+      "path": "start_D.sh",
+      "bytes": 199,
+      "sha256": "d331459396e3158347ad76ec17d19bc5ea4dd22fe3575ad87809528cb237adc9"
+    },
+    {
+      "path": "tests/flyco_smoke.py",
+      "bytes": 9533,
+      "sha256": "4b734cd6e65719d44d916ce185a510caf9b4438984a5e0fd4ab5b7c853c94703"
+    },
+    {
+      "path": "tests/gpu_smoke.py",
+      "bytes": 9023,
+      "sha256": "431ff9598906d738ada4c142092db92787c09d0ba94dd177b3e5c6382d696f3f"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 8874,
+      "sha256": "f436713cd3d636de4db1f417394fa30957dae39b62a228a6bc5be868ce789182"
+    },
+    {
+      "path": "third_party/efficientsam3/README.md",
+      "bytes": 15052,
+      "sha256": "f0930ab8c3673c34caddbc83d1f3b0bfd2a42654062ace01875f0899a746d88e",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "README.md"
+    },
+    {
+      "path": "third_party/efficientsam3/pyproject.toml",
+      "bytes": 1830,
+      "sha256": "13765f94fe82f05b9498e616c5090baf53449e276283843f6001fca784f8e879",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "pyproject.toml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/LICENSE",
+      "bytes": 7414,
+      "sha256": "67f67e15efa517e0f67f59ff2d2f603a624da5d2f5458b0c5b366ccd66bb3eea",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/LICENSE"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/README.md",
+      "bytes": 19998,
+      "sha256": "49eeec6def6882f4aa753dfff144de1332fe992197e5666622d02d3db0b20caf",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/README.md"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/__init__.py",
+      "bytes": 1018,
+      "sha256": "75acf8ac8f1ccdb6d29e663004b53696664ede41159deb763af68a8e303c6270",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/assets/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/assets/bpe_simple_vocab_16e6.txt.gz"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/pyproject.toml",
+      "bytes": 2833,
+      "sha256": "49028f470be82eddcb89187666a73f8ac4ebda2bc96d50ce28e1101df3f1febf",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/pyproject.toml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/__init__.py",
+      "bytes": 582,
+      "sha256": "9c107a8afb90f2859c8d4f8a4ae58920def5d0f73acaf247b7a496e6ccd7d5af",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/agent_core.py",
+      "bytes": 26631,
+      "sha256": "84ae9a07875ff3665ba522a629696a87c99662447e1233cd4d324849eb7d3d1b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/agent_core.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/client_llm.py",
+      "bytes": 7890,
+      "sha256": "f511dbbe11457630eb800eaef796f0fe03cff894c8ebc63a7fab6b08759110db",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/client_llm.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/client_sam3.py",
+      "bytes": 5235,
+      "sha256": "6de7859c92a9e86ad1cf47a66b3f4d1d01916a4ad9eb2ce851fc0ef7fc73e825",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/client_sam3.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/boxes.py",
+      "bytes": 15018,
+      "sha256": "d5d9a7b05e206f70a6e9b0c066e1d79be88f4f5b0cc3a22553e9840d2d18c135",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/boxes.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/color_map.py",
+      "bytes": 3780,
+      "sha256": "f89fb531a2d415592b14c2e02d8f68651db1e10c263fc3d6ceb9f206a926cb38",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/color_map.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/keypoints.py",
+      "bytes": 9277,
+      "sha256": "62fd645d9fe2971906c3cd35d51c35085e50c322e0d8c883a10f960b9903a3aa",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/keypoints.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/mask_overlap_removal.py",
+      "bytes": 4934,
+      "sha256": "8e8cbde4785868fac9c6c6543b0d0f32db4e0c1278c474bb6b2ff1df77cce117",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/mask_overlap_removal.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/masks.py",
+      "bytes": 20635,
+      "sha256": "ee9032fb519e1a97355316fbe2c74fd48ae9bedbdfd4ec0ffd3fe8ee071ce869",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/masks.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/memory.py",
+      "bytes": 2715,
+      "sha256": "e8b63ce314edfadbdf3f30102d84b4a9f442bfdd1f70d9342dc140276df48fc6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/memory.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/rle.py",
+      "bytes": 4351,
+      "sha256": "21371c3d97445d69537415c794a2a3dd49f41811c7882354f1117aa2924216c5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/rle.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/roi_align.py",
+      "bytes": 3196,
+      "sha256": "5905ea7c18058d41d4f66645e867058de506230df3f69e302c244412a02eb713",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/roi_align.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/rotated_boxes.py",
+      "bytes": 20281,
+      "sha256": "151ef1a4da577d53a5a64a87ed3e21852f57103216f2b07956739dddd2f0d6f4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/rotated_boxes.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/som_utils.py",
+      "bytes": 12412,
+      "sha256": "3a7036d412e8cf855d1676bb3d5d08d211e5c0b05449f293ec9939c8236d2968",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/som_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/visualizer.py",
+      "bytes": 64906,
+      "sha256": "cc5996a3b7ba50264390bb2fd77022e7b27fc8add2009acc20bee8a2476fb73c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/visualizer.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/helpers/zoom_in.py",
+      "bytes": 6677,
+      "sha256": "05ee7df59a069803dff777abe2729a398f44ff7ef43254e78b4def90fd4b8b7e",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/helpers/zoom_in.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/inference.py",
+      "bytes": 2301,
+      "sha256": "41c62872a6664911491bfa7d328847e5581afc8573838d91c65203141c831dc6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/inference.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/system_prompts/system_prompt.txt",
+      "bytes": 66292,
+      "sha256": "05beeb1d23a58db50d5bcd90fe4ae53ed226ecbf418635e2717e79201f112ca8",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/system_prompts/system_prompt.txt"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/system_prompts/system_prompt_iterative_checking.txt",
+      "bytes": 5877,
+      "sha256": "8e6f781b49a0dccf7c48bd3474aea33572c71884c493f94b3eef640059371f55",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/system_prompts/system_prompt_iterative_checking.txt"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/agent/viz.py",
+      "bytes": 4056,
+      "sha256": "27427c06accc770df43099738852a312917a2ba8043af5ccb99521bb5bd1f2e6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/agent/viz.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/__init__.py",
+      "bytes": 1229,
+      "sha256": "f33913feb8e201a17251cc934a7410f8e46870fa3b2b5124d824f8624a46f815",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/__init__.py",
+      "bytes": 682,
+      "sha256": "714be59c4e9cc5bb986931eb9baefaf383c80fadb9afef428aa13a57323a7a91",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/backbone.py",
+      "bytes": 12791,
+      "sha256": "f1fe516d5b71c58f0d5504183a5aaed847cc8f6988a15cd6387f1017f98d44ae",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/backbone.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/efficientvit/__init__.py",
+      "bytes": 345,
+      "sha256": "32f8624124fe87bc590e40f19cc215d5ccb4c1c10ac09a188aa5a6e6cb6516f8",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/efficientvit/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/efficientvit/backbone.py",
+      "bytes": 12845,
+      "sha256": "5ddb2ac5e41e3714ce0a3bb10671903b2bc916d546f5aac609dc79720b9df775",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/efficientvit/backbone.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/efficientvit/cls.py",
+      "bytes": 4756,
+      "sha256": "0b52293b250e8280a0c5208c83055288dd1d697fed25ac1ddea8e4d9b009d2f4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/efficientvit/cls.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/efficientvit/dc_ae.py",
+      "bytes": 19729,
+      "sha256": "68752ddbfa56ae7065844a92ab52d05f5e581b70e39c38556868a3abaa0e0c49",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/efficientvit/dc_ae.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/efficientvit/sam.py",
+      "bytes": 26410,
+      "sha256": "63d38ef743e9f48894442994fa0d41b253b5071115de8cb64dbce79b2ff0f6d0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/efficientvit/sam.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/efficientvit/seg.py",
+      "bytes": 10920,
+      "sha256": "77afaeb8359d720525395dde38cca868d6da604d2bab8aab492fbfffd185ec35",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/efficientvit/seg.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/nn/__init__.py",
+      "bytes": 219,
+      "sha256": "48b06700a6661a908c4444b11a52139446e8d781492c94a20ddb3eabda99a0df",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/nn/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/nn/act.py",
+      "bytes": 662,
+      "sha256": "af2b22edf8635624658543d1c0880f5e210ca5fa6b1c37a066072834fa3ac8a3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/nn/act.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/nn/drop.py",
+      "bytes": 2822,
+      "sha256": "44b66524cea290eb7040ef88e414d7d6a3ecf0dbc744f4476092f3b5ad786acc",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/nn/drop.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/nn/norm.py",
+      "bytes": 6040,
+      "sha256": "d9348c6259d3396b66c283037f84fcf8ccd01260c43ac030bea948261f8f911d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/nn/norm.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/nn/ops.py",
+      "bytes": 24677,
+      "sha256": "dcdf99eb8d8e63e9b93a31476a9a3e71cab77cf5b5138c835fce80cf66fd25f4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/nn/ops.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/nn/triton_rms_norm.py",
+      "bytes": 6235,
+      "sha256": "88c04a33a815def6743e1bba191fff26ca2560c0d8243633c86b0303d506c06b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/nn/triton_rms_norm.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/utils/__init__.py",
+      "bytes": 68,
+      "sha256": "a0ebbee84abf7fb6943efc65ba7991eedb599f10cc88d426012a722f1b346a0c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/utils/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/utils/list.py",
+      "bytes": 1265,
+      "sha256": "3effb0e958189b4944d11b74fbcb80f3f5e2259449dae052a583222f4815e028",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/utils/list.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/utils/network.py",
+      "bytes": 2924,
+      "sha256": "3fd96ed05f32a5df99970ad7cd370c5ab65932df1fc4d2f0185d94f93e9a4dbc",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/utils/network.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/efficientvit/utils/random.py",
+      "bytes": 2056,
+      "sha256": "165af79f3e7b534bc391e8858735319aa0cba33189e71d8646e67068107b9958",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/efficientvit/utils/random.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/mobile_clip.py",
+      "bytes": 31975,
+      "sha256": "508b340ac3563c1fb6acd8a8d55a888425cd38e6ad2cee4eb3a31fe5f37b6de5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/mobile_clip.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/repvit.py",
+      "bytes": 17612,
+      "sha256": "56aa48372535130c8e00286d552907f53fe41d353d90783450d461bfc6979258",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/repvit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/backbones/tiny_vit.py",
+      "bytes": 25560,
+      "sha256": "10012e8e3c9de76b451091c70769fce4b5841c6c6893804110fdf4f589ba7306",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/backbones/tiny_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/device.py",
+      "bytes": 1166,
+      "sha256": "b2041545e648ee102bf057bf45ea3b5cccbadaa6e18952caab2c5dbc03fef76f",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/device.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/cgf1_eval.py",
+      "bytes": 27852,
+      "sha256": "56b19172551f98afd8b584f39676a383c62aa30784504f0fe7ccee9d0c8b7569",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/cgf1_eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/coco_eval.py",
+      "bytes": 37159,
+      "sha256": "2d774989b1c4b1973172b0e348db07c2787509f8abb12da4c04e0cf22a0932ef",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/coco_eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/coco_eval_offline.py",
+      "bytes": 6264,
+      "sha256": "bad79391900e259a42ecca2918041e6dac3ccff12566ca5829043b7ef7669ef0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/coco_eval_offline.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/coco_reindex.py",
+      "bytes": 8341,
+      "sha256": "0d0a2356cc42ff6853f7f8cb992b07e7c6309c816e02524626fe415e168509a2",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/coco_reindex.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/coco_writer.py",
+      "bytes": 12197,
+      "sha256": "8b9647cce8013194a093e4c93a389947c38464e692284aec892ad166369d11af",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/coco_writer.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/conversion_util.py",
+      "bytes": 7365,
+      "sha256": "956f2b666571417703ed10303f288481037dc366bd606079a54da2bc5f7fc191",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/conversion_util.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/demo_eval.py",
+      "bytes": 25748,
+      "sha256": "2971c6146661a6eaf2ea4760159f6fef3bc5c83a7da3e15b9b387adf8e2621e2",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/demo_eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/__init__.py",
+      "bytes": 16,
+      "sha256": "ad102ca15cd43bb40a6313db2a0cc2a1cf080715eaf4b75aabed7e39921f37b2",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/run_ytvis_eval.py",
+      "bytes": 5131,
+      "sha256": "d0b4fcaa73b9387bcad692106013501122dda1cb89d73c36b639748e33d4d676",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/run_ytvis_eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/__init__.py",
+      "bytes": 87,
+      "sha256": "265c117eac95199f77c06a32041647e43e4978025d7db11227bc5f6a5219d785",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/_timing.py",
+      "bytes": 2412,
+      "sha256": "000e54a53b29616058aa5ea05baf429a38cb6ae41347213ecb65a35627b11256",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/_timing.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/eval.py",
+      "bytes": 17404,
+      "sha256": "acb732df79f9185cc813e350e7a8f6a3cf0c3deca9be40bd1efe511bc43eb7a4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/__init__.py",
+      "bytes": 68,
+      "sha256": "d41f8abeec786e7b33dc2cfa4de81fd2cff0174c3803b9bb862f2d946a402b80",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/_base_metric.py",
+      "bytes": 5385,
+      "sha256": "2abb0b69217865459143bc412f322c33c6003723a81f7340ff59ab3b95469302",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/_base_metric.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/count.py",
+      "bytes": 1659,
+      "sha256": "0bc967f6ac0ae364ab11fca9378639353ab6a436446384d1bc1a390a35f805f0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/count.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/hota.py",
+      "bytes": 12137,
+      "sha256": "24deb2239f313318cdd6cf812d7c01abda3857f7d04b15e54ffc4b493ac006d5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/metrics/hota.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/hota_eval_toolkit/trackeval/utils.py",
+      "bytes": 6399,
+      "sha256": "a1e08773dea32f9dc954bb2ff5b91f9da562273f51dd60b2257df3fe9d6ea0ed",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/hota_eval_toolkit/trackeval/utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/postprocessors.py",
+      "bytes": 29435,
+      "sha256": "d0a0d1549d1eaccd7522aeb4a724232705a8921b3fe5b3fb230b94c1cbae72c4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/postprocessors.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/saco_veval_eval.py",
+      "bytes": 5115,
+      "sha256": "b9651559ac1668461709ed45257ed299734c091ea941d5c8862f6d50a2f23c9c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/saco_veval_eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/saco_veval_evaluators.py",
+      "bytes": 37975,
+      "sha256": "85094aeda1bbee669173acb495c9bc7c9e15695a4b0b3273fc13f232c00f75b5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/saco_veval_evaluators.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/__init__.py",
+      "bytes": 107,
+      "sha256": "4c357f40f7c459ed6cdb0c1f74b5971c5c0819af25aa9d6fbcae675fa6a98f76",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/_timing.py",
+      "bytes": 2424,
+      "sha256": "31956a138ac4cd32c966d8b89cc951a047b467611150e37888888b6f44c0ebf3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/_timing.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/config.py",
+      "bytes": 5812,
+      "sha256": "85d206da479b69e6f12328b5f82fb50210fcb33f5c341e98d835e9c4704fe01a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/config.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/eval.py",
+      "bytes": 10907,
+      "sha256": "15027ae0735e2cdcffccf508fc0ec7d8d767d2df9d53775fa4165a25c78b617a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/metrics/__init__.py",
+      "bytes": 54,
+      "sha256": "ffcdbcf47586d3a9a455dada640584d4befa3a6c3a2d57594873d2cd36107548",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/metrics/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/metrics/_base_metric.py",
+      "bytes": 5333,
+      "sha256": "616a13575e72839efee580a1d1f2f7dbe4cdb77dfcb38b86eb0c5733c33bcef3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/metrics/_base_metric.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/metrics/teta.py",
+      "bytes": 15993,
+      "sha256": "0c3903e441b04f4c4d3b788e3087eb5c6d6e44995ed0853e2207b8a16f1bd2da",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/metrics/teta.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/teta_eval_toolkit/utils.py",
+      "bytes": 1327,
+      "sha256": "5fb85ee973d031c8f8c92af2db57a009d211e684f5c8053204b8be0ca6c2d851",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/teta_eval_toolkit/utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/ytvis_coco_wrapper.py",
+      "bytes": 6205,
+      "sha256": "72333f1c00f30a62960db968b833a79ec7ec4b42c13b58e6dfee56a2b1ebb8a1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/ytvis_coco_wrapper.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/eval/ytvis_eval.py",
+      "bytes": 17438,
+      "sha256": "2742159749ec3f044d1f7113e820ba5280ae82c7b8ac8194cb7888ea59829250",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/eval/ytvis_eval.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/logger.py",
+      "bytes": 1874,
+      "sha256": "91e882475d059d14dd4a5f1a1a6de8a6fa6428144fd1d0acfb77475226ee98c3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/logger.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/act_ckpt_utils.py",
+      "bytes": 4445,
+      "sha256": "d621a5a6b4bf618608e7cd712f6757a810080a78cceda52ae6ef66a0d46730bd",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/act_ckpt_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/box_ops.py",
+      "bytes": 6206,
+      "sha256": "09966f42f12ff8fc65c8da546793f1d635ae2e979d821766ce9a1ab508def374",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/box_ops.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/data_misc.py",
+      "bytes": 6559,
+      "sha256": "94a71883a060384ae45e8d802c73c9c6c388589c919a0ffce1a66287ef40a2ff",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/data_misc.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/decoder.py",
+      "bytes": 38037,
+      "sha256": "a8f4fd8412f9c81b069484e43564e0add1874953293ad195da5bf39d281a9c27",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/decoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/edt.py",
+      "bytes": 8547,
+      "sha256": "d33f5a0c0831a8689e51a48f0e54fddc394b2f48a484287734c0f45be97bd031",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/edt.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/encoder.py",
+      "bytes": 23780,
+      "sha256": "b802ead0fd62adcef56a7f5f54b270a64393071bd666e3cc7ab5cea037eddba1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/encoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/geometry_encoders.py",
+      "bytes": 35030,
+      "sha256": "00d1baf81d830185f89b422568fde97271ab2a8737523f3e4069daf8af8c940e",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/geometry_encoders.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/io_utils.py",
+      "bytes": 27623,
+      "sha256": "8970fb0ed7e4c8c52b99fd1c7073768bc0e2f16406d4444d319a203fdd6cac1d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/io_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/maskformer_segmentation.py",
+      "bytes": 11741,
+      "sha256": "059eb53439e4f4eaf8495e46bd03ebcbea3569b8d0ecaca538f3b5bd073a5fda",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/maskformer_segmentation.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/memory.py",
+      "bytes": 6887,
+      "sha256": "c7aecd7738b043edd9c8a7860d440c55c7e594fbe4dd4f136da1709f732b9190",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/memory.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/model_misc.py",
+      "bytes": 15437,
+      "sha256": "8d474dec66da3ea30969d2ec96d3837c906997232bad0f0eee28b62dd6de1e8b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/model_misc.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/necks.py",
+      "bytes": 4312,
+      "sha256": "f28916fac456a4e85048cf163fb5649dc60fe3bcbc51dbe6405f7248c57e60b9",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/necks.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/position_encoding.py",
+      "bytes": 5050,
+      "sha256": "9f0176d47535f846d319f5b285fce80c70d219b72b9bde6b8606f65c9131dded",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/position_encoding.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam1_task_predictor.py",
+      "bytes": 20044,
+      "sha256": "c36be934414eaee2c7d8f011c10ed791c09d4401f40d2bdf33353e77f66925d1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam1_task_predictor.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_image.py",
+      "bytes": 38415,
+      "sha256": "6242d3c56b7475a09f2143ff266620d8dcc9f00304b47cf2127f5ecb2172e5de",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_image.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_image_processor.py",
+      "bytes": 10803,
+      "sha256": "7d3e969c68ceb151b326201f05cd1738cea7174f7e8afea74fc392534cfd0e80",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_image_processor.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_tracker_base.py",
+      "bytes": 60811,
+      "sha256": "c6affb6a628b796b641e775c3ead19fc5ab4dad93cc22a2db68da1a3246a5bb8",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_tracker_base.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_tracker_utils.py",
+      "bytes": 19875,
+      "sha256": "f30e6376f9fe909189aecfecca4724907f4b714b522e776c7a1ac29e576101bc",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_tracker_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_tracking_predictor.py",
+      "bytes": 72544,
+      "sha256": "4516d6c5c27f6572b1782b15203534af9dff43f041508524734541331ae8a03d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_tracking_predictor.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_video_base.py",
+      "bytes": 85858,
+      "sha256": "26ed5fa425365eada21138cf2ea0e1b266855a933db7a768e730168d8f1bbd19",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_video_base.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_video_inference.py",
+      "bytes": 79537,
+      "sha256": "54e2207feade32c9888cc79af1c03dc8adfae4ab563b1b7e4bf56950d5002ec1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_video_inference.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/sam3_video_predictor.py",
+      "bytes": 24410,
+      "sha256": "1e58d8c3d148ec0de3984ee046dc7a03ee5263abe07f15f177fdd3e881b2768a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/sam3_video_predictor.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/__init__.py",
+      "bytes": 477,
+      "sha256": "2598ac42a529e25f7522faa59280055c3200dadab1deafd9f982eb616d4c888d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/automatic_mask_generator.py",
+      "bytes": 15541,
+      "sha256": "0d9a5d407ff946c17b804c75d23b47afaa6f09fc317bf9befdabdf19a91d2ed0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/automatic_mask_generator.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/build_sam.py",
+      "bytes": 5676,
+      "sha256": "21f0b4e95c9b95b85a4298c414b9bb3bac2fb898c1a8ca392ac3d1de7dfac546",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/build_sam.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/config.py",
+      "bytes": 10141,
+      "sha256": "0a5ae656280646581931b249d80b262964e64eb94a835052b0d53ea52073e352",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/config.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/efficient_vit.py",
+      "bytes": 3250,
+      "sha256": "30a19cd186c85c36d2d5bbc97e7bd5e2b268b1ed61661c7d7e7b6fba87516975",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/efficient_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/__init__.py",
+      "bytes": 504,
+      "sha256": "574cc1ea06e3d8747e3cfc2c4a2e1fc89427d109a843e3f3f509fc7a56a8fb5c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/common.py",
+      "bytes": 3759,
+      "sha256": "f48c8677b10238d19f8995f02f4cd7aa62fb10eb8a3ce07775bb4b2d6f310d91",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/common.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/efficient_vit.py",
+      "bytes": 3250,
+      "sha256": "30a19cd186c85c36d2d5bbc97e7bd5e2b268b1ed61661c7d7e7b6fba87516975",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/efficient_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/image_encoder.py",
+      "bytes": 14815,
+      "sha256": "bce61823f10e32d0943a2e7eabe7a08f2094db38d4e9b247fa598496b67fdb30",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/image_encoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/mask_decoder.py",
+      "bytes": 7627,
+      "sha256": "2bc3e97cd37de6b42020986371b7c62a874f8aaf5aa0d36464efc0db1637ee96",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/mask_decoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/prompt_encoder.py",
+      "bytes": 9142,
+      "sha256": "017a7a3caa0b50dbe31b1218a78d1d26ba8cee94ec3a05ed76863abac02b45e4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/prompt_encoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/rep_vit.py",
+      "bytes": 7111,
+      "sha256": "98e0b67bb45db43e3d107fd8e5d3ab88a38c840e8d337e8603c39f6145e6eed4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/rep_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/sam.py",
+      "bytes": 12488,
+      "sha256": "de3031e9de4e913be5eac709e87a69f1f0ae6d68ade94c3432a445f92489cff6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/sam.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/sam_batch.py",
+      "bytes": 5865,
+      "sha256": "17bbd67452f2c95cac7c3e56ac1182ac3e7f1f8fd774745a229e6ed99dd5a231",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/sam_batch.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/tiny_vit.py",
+      "bytes": 3724,
+      "sha256": "9a1270209b017074b3698d20fd5c925cd450ed1a2ddf81cd43ccb20bb3d18616",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/tiny_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/modeling/transformer.py",
+      "bytes": 9077,
+      "sha256": "395ddd63b882883943090526565d8822cc29e47207ce9291271cb14d9d4ba0c1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/modeling/transformer.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/predictor.py",
+      "bytes": 12215,
+      "sha256": "7ed1f7c03161c871b7a4ec614bc17abea3b864e8e6b0de6b4106a0b66c5b1441",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/predictor.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/rep_vit.py",
+      "bytes": 7111,
+      "sha256": "98e0b67bb45db43e3d107fd8e5d3ab88a38c840e8d337e8603c39f6145e6eed4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/rep_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/tiny_vit.py",
+      "bytes": 3724,
+      "sha256": "9a1270209b017074b3698d20fd5c925cd450ed1a2ddf81cd43ccb20bb3d18616",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/tiny_vit.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/utils/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/student_sam/utils/common.py",
+      "bytes": 13826,
+      "sha256": "1bc7711411e86f5d2f98f41be0a8e0c4ed1b46a6460174cb7957f9920b10ebbd",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/student_sam/utils/common.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/text_encoder_student.py",
+      "bytes": 2368,
+      "sha256": "08764ff454f2bdd53d33c953bd2f849e106bed56499a9719a5df63f331b6c978",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/text_encoder_student.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/text_encoder_ve.py",
+      "bytes": 11587,
+      "sha256": "6c59723f6a774f620dffea92ac8f3b2d33a4fd6105c1b21880ebb97ef9b3bf19",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/text_encoder_ve.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/tokenizer_ve.py",
+      "bytes": 9084,
+      "sha256": "91ed7156fddb2c4197ef03cc89c50a4338a6fa93e903849b48d4e8d1c07782e0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/tokenizer_ve.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/utils/__init__.py",
+      "bytes": 222,
+      "sha256": "6af9c73e62a778c4d988319104f67d14f029bedabc94666ec56221656cbd0ce8",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/utils/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/utils/misc.py",
+      "bytes": 2598,
+      "sha256": "9ac1134632480ddf84c1b791f9392c3cde89645522ef71bbd70877e0bdf7eb78",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/utils/misc.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/utils/sam1_utils.py",
+      "bytes": 5149,
+      "sha256": "3398e1518eb4ccd9390743f1ad70fd7779855c45553abf9dbb48707788ebb75a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/utils/sam1_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/utils/sam2_utils.py",
+      "bytes": 8750,
+      "sha256": "25bdac81e82061d17a28e5e9745f1929f313ff14d7c677d0936a033de50fc26f",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/utils/sam2_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/vitdet.py",
+      "bytes": 33323,
+      "sha256": "04372192209fba96bcb18208e0a1722ff11f58edf85e51c56ad7764c773b5e06",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/vitdet.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model/vl_combiner.py",
+      "bytes": 6954,
+      "sha256": "65ab02bb391e95098887f6c3f8f3e948e081fa9741199e4ac511c5e532485431",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model/vl_combiner.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/model_builder.py",
+      "bytes": 49361,
+      "sha256": "8e4d7828e63e2263d0af963ca20707be956ac5bd75a2026d892078540e1c7017",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/model_builder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/__init__.py",
+      "bytes": 228,
+      "sha256": "3a7c0ac84b6b556b62b68e29e89550e92ba3023d7f4718467a5f40229f97901c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/associate_det_trk.py",
+      "bytes": 5565,
+      "sha256": "f05bc680fc1d516aa2cb5017127849def9ec53e96981c2dc3f5fe25db2ebc325",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/associate_det_trk.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/compile.py",
+      "bytes": 3347,
+      "sha256": "19d4f7c04730df0d4c9f04a8fb086453c2b56d602289b846396fa92209badc58",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/compile.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/connected_components.py",
+      "bytes": 2954,
+      "sha256": "dd21833ee5e4434a72e25eaeff392d6b750110deb149a91b2399c5f3003f3bb8",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/connected_components.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/fa3.py",
+      "bytes": 855,
+      "sha256": "18cea76a3840aa158bc0989b1435e56e12606ae9712057b9833badd1ffd80392",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/fa3.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/masks_ops.py",
+      "bytes": 2821,
+      "sha256": "743f89dc77f7a00bd10933054f681c42e15c56b1be6483ee4e67bc21930166ea",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/masks_ops.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/nms.py",
+      "bytes": 3530,
+      "sha256": "bc294533cc4ffb5164e144f1cd73cbb2686c5486ef6b7677ff54f7f0962404b5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/nms.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/tests/tests.py",
+      "bytes": 1927,
+      "sha256": "afcf9215931c0c52c71ebbc596bb2c98b75c3af0213efbcf92ac87b80e9d05d9",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/tests/tests.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/triton/connected_components.py",
+      "bytes": 16391,
+      "sha256": "5c71a9e35d8c8d761e2d6d778a00630598ec0614a16d2cf0ccb75be6eafbbbfe",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/triton/connected_components.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/perflib/triton/nms.py",
+      "bytes": 4841,
+      "sha256": "7adb448738d58ac30ae1d9e126a9825a5db05062fd486be238d79bd6adbec57c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/perflib/triton/nms.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/sam/__init__.py",
+      "bytes": 200,
+      "sha256": "0911a3099918893185e5cf9f9b6a3a91b64e954a5ef7a3ded5cf0d5d3b43661b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/sam/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/sam/common.py",
+      "bytes": 1394,
+      "sha256": "15e8b5a8a486a83f4d7fa0da4417010d13a1a91a72066d83f410ff7a7d28fc70",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/sam/common.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/sam/mask_decoder.py",
+      "bytes": 13728,
+      "sha256": "9c5db708675704707f1f907c34ab2707703834b1ff6fd5a01ebb9443ec45e5bb",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/sam/mask_decoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/sam/prompt_encoder.py",
+      "bytes": 9505,
+      "sha256": "92a28ba16c538966c0a8ea153918d89196bd47e62c9f06900c1b2db3f7475e9a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/sam/prompt_encoder.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/sam/rope.py",
+      "bytes": 6080,
+      "sha256": "682adf2dc4f9879a98cfc09fc69fba7d7d8f9b27c6b13138eb8d4e0e40182e7a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/sam/rope.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/sam/transformer.py",
+      "bytes": 13313,
+      "sha256": "31e7c4c8fdffd3a6c7bc29441d93532826f59fd323e910ea547deb86c41242a4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/sam/transformer.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/eval_base.yaml",
+      "bytes": 9715,
+      "sha256": "4829f39b7800785255e6d944b5be65403383f4fb213c65d9636658dd3812bb99",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/eval_base.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_attributes.yaml",
+      "bytes": 2644,
+      "sha256": "4dfb99d8d07ef0c6a7dfbd2dd2997f275e3e28f07a77fb9e5050bc4e3355a3bd",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_attributes.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_crowded.yaml",
+      "bytes": 2620,
+      "sha256": "532b18bc3654e0a9d8583aa2e6a6baf4fa43f3a0a2d9eb97f3d38ac7dc99f409",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_crowded.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_fg_food.yaml",
+      "bytes": 2620,
+      "sha256": "1ee1777b7653187d26959281e9448c14ba74e221435664af658df3903a75925e",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_fg_food.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_fg_sports.yaml",
+      "bytes": 2716,
+      "sha256": "5cf318f558fb5fe21caae5fc7e0a37cadeb5b99dca2adb01788eb2adfb811ff3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_fg_sports.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_metaclip_nps.yaml",
+      "bytes": 2644,
+      "sha256": "e9d4c8e71c95f456b018c5e5a8c3c2a4bd407b8e3b25e9986c9637d5d37416c2",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_metaclip_nps.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_sa1b_nps.yaml",
+      "bytes": 2608,
+      "sha256": "90e1cb398d776fc013167d61c2230c8b5eac1b82c09828ebce72c9950feaa36a",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_sa1b_nps.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_wiki_common.yaml",
+      "bytes": 2652,
+      "sha256": "afb8b11817b3844c6dfdcae978558795db402a4f4cf22467a90ec9b7f5f7bc9f",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/gold_image_evals/sam3_gold_image_wiki_common.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/odinw13/odinw_text_and_visual.yaml",
+      "bytes": 9373,
+      "sha256": "022dad8702957d0f5a2c2c83f779677ac04a5e0b332ef5017e727e5801be4d9d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/odinw13/odinw_text_and_visual.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/odinw13/odinw_text_only.yaml",
+      "bytes": 9172,
+      "sha256": "036c5157b1d2cc9bfecfa26cf3e4e01e9fb52732908c29a8ecf7dff852e4c714",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/odinw13/odinw_text_only.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/odinw13/odinw_text_only_positive.yaml",
+      "bytes": 9174,
+      "sha256": "38db8cf44ea8043bee0d906a792fbb7fd3d4f4fae3145e802b85b3e90aa236c7",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/odinw13/odinw_text_only_positive.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/odinw13/odinw_text_only_train.yaml",
+      "bytes": 21587,
+      "sha256": "812abed2c41fecacb0725b35a1ed0f22a94d2babb906302118df9dc398e8f67d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/odinw13/odinw_text_only_train.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/odinw13/odinw_visual_only.yaml",
+      "bytes": 9376,
+      "sha256": "99b4cafe3e50d4f61a5c6e0f76f30a95df2e90695f9fd61ebaf5024c175dac9d",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/odinw13/odinw_visual_only.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/roboflow_v100/roboflow_v100_eval.yaml",
+      "bytes": 17908,
+      "sha256": "245343562ecacac647b94b105146d5d8922d891273fcbb40fd3dfd129d49d0b1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/roboflow_v100/roboflow_v100_eval.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/roboflow_v100/roboflow_v100_full_ft_100_images.yaml",
+      "bytes": 17911,
+      "sha256": "e3caa5149fbe88462136c2fd4b84d81081a0f8ce09fad7ef47e216558e4babe5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/roboflow_v100/roboflow_v100_full_ft_100_images.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_test.yaml",
+      "bytes": 5255,
+      "sha256": "132a7d1ccd621aa3f09491bdf23c6d8423cc6302b46cd493b52e5eca265be568",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_test.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_test_noheur.yaml",
+      "bytes": 5256,
+      "sha256": "024ea4b230e570540759f7def9cf050731a6a506553d767578e18b21ffe7143b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_test_noheur.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_val.yaml",
+      "bytes": 5253,
+      "sha256": "09a90d46bcdcfd92129bd648f2fdae669a9881cabb024da1384e598fd9a1db15",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_val.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_val_noheur.yaml",
+      "bytes": 5254,
+      "sha256": "54487e85bba7c8962de21115a2a101fe64bf9e7059ca0117a07423aed23e0bb0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_sav_val_noheur.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_test.yaml",
+      "bytes": 5273,
+      "sha256": "ae350d4361769e3af68533f6215198a6d4800693eb2fee0d55c162c24b8198a9",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_test.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_test_noheur.yaml",
+      "bytes": 5274,
+      "sha256": "81b7421f52a0a2b8e862fa8780e7c69fdfcc54f7b4beca3cf4e032ac6916e3b0",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_test_noheur.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_val.yaml",
+      "bytes": 5271,
+      "sha256": "6f75dde770b7f31c46f5958762eec7bb477f3d28147b6fe4d9349ca6d626bc12",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_val.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_val_noheur.yaml",
+      "bytes": 5272,
+      "sha256": "edf8e0dfa3be07846f1c0a73224ac77a6fa19a9430128cc6fc8f6499488a51e7",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_smartglasses_val_noheur.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_test.yaml",
+      "bytes": 5257,
+      "sha256": "7858c5ca2502de04b7a7ad93abd2d67f9ce8bcd6c2259555934ac072db88dffe",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_test.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_test_noheur.yaml",
+      "bytes": 5258,
+      "sha256": "17bcd5cdf7605c912fe6743780334cf3045e35619e62cff60265acb84bc68a82",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_test_noheur.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_val.yaml",
+      "bytes": 5255,
+      "sha256": "067c28cef79fee7d347be8a61fab37829b622fdad3a137bed1474ab88bcc3ea1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_val.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_val_noheur.yaml",
+      "bytes": 5256,
+      "sha256": "0e45541897e16383ce8ec54b04f310f0368605a52e7f5162d46e701631d6dc66",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/saco_video_evals/saco_veval_yt1b_val_noheur.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_bdd100k.yaml",
+      "bytes": 2421,
+      "sha256": "635720c387e858e68c92cc30977ef5195d490b652761d7345a1f02772cb384e9",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_bdd100k.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_droid.yaml",
+      "bytes": 2409,
+      "sha256": "be6fe50156dfb10c7f95f22f3f9b4be7f5d20eb72e9fa6cc09551e605bddf687",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_droid.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_ego4d.yaml",
+      "bytes": 2409,
+      "sha256": "a390d9e15ccf6494fd8dd0a9fbf2c48ab25e0b95eaa2030fcd1e87140e0d8fa4",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_ego4d.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_fathomnet.yaml",
+      "bytes": 2426,
+      "sha256": "eee41d6028aed1ff533128d624991edafd4f37839c3d0f93a48c3e8473f4930c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_fathomnet.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_food_rec.yaml",
+      "bytes": 2427,
+      "sha256": "4bf7e5a462a30583978bbb229b65cd0c5af47a146786f45b7a38b5cddfc6945b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_food_rec.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_geode.yaml",
+      "bytes": 2409,
+      "sha256": "e48682e84e8a67894a254d1d012fb245b3180cb0133d2ce066af23ddf28e33d2",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_geode.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_inaturalist.yaml",
+      "bytes": 2445,
+      "sha256": "ef08e07ab21118d3ca299f54fbc242ba0828ef1d96f9362953e0788f62559426",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_inaturalist.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_nga.yaml",
+      "bytes": 2417,
+      "sha256": "3939d39125efa1d5cb8c127baeb5987c0bfc34e0a0207b305af28bc1d52c70e6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_nga.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_sav.yaml",
+      "bytes": 2397,
+      "sha256": "13627f51da2900f42da08a4acee032162fc1c2fa2cbb1c09c343f5d6e6bb15f3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_sav.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_yt1b.yaml",
+      "bytes": 2403,
+      "sha256": "7c9e382d80396ee1e47f30bd180c0c758a02efe549d9cb4ad9ee4dcfe615c53b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/silver_image_evals/sam3_silver_image_yt1b.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_local_train.yaml",
+      "bytes": 1744,
+      "sha256": "2cd20d8cd96de60fcbadc5f88bd8b9dfcea598cae5fd591d49a53e3ec51bb407",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_local_train.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_evm_mcs0_seg_img_fpn_99_1_20ep.yaml",
+      "bytes": 578,
+      "sha256": "ea2bf255dfa91eeac116dd6132cae65668b48ef452e3fc5600bbe534bd05d828",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_evm_mcs0_seg_img_fpn_99_1_20ep.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_rvm_mcs0_seg_img_fpn_99_1_20ep.yaml",
+      "bytes": 570,
+      "sha256": "7fd6337526aa8ab26ce2486516304ef9a90259bf74e42dd13dd5dc3c86b09294",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_rvm_mcs0_seg_img_fpn_99_1_20ep.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_diag.yaml",
+      "bytes": 1346,
+      "sha256": "eb7c9e69318ebf96729633102edcc1f2e282414c80e8b3285b65fa461d2a458c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_diag.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_img_fpn.yaml",
+      "bytes": 4759,
+      "sha256": "17e1ee5369303a9b96518721591fabac93aeeb770e7245c64f090f39ecfbad45",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_img_fpn.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_img_fpn_99_1_20ep.yaml",
+      "bytes": 1328,
+      "sha256": "29d518637a97b6fb9044911f78847c22bb5648db94468f0a07e489eeb148af95",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_img_fpn_99_1_20ep.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_img_fpn_99_1_20ep_score_unfreeze.yaml",
+      "bytes": 4079,
+      "sha256": "6e9b46ec187cd3482f6886e80f38ef6ae581f75c986e37d1d3b761c72563aef7",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_img_fpn_99_1_20ep_score_unfreeze.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_memcompat_pdrop.yaml",
+      "bytes": 1891,
+      "sha256": "7c45adacd1d99119bc60c19c0b03a5ac93e3db46829fe8fb8ad1ca44d3cfa62b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/configs/stage3/mixed/stage3_mixed_sacap_sa1b_tvm_mcs0_seg_memcompat_pdrop.yaml"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/data/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/data/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/data/coco_json_loaders.py",
+      "bytes": 14936,
+      "sha256": "6edef9c719d5393e2d38ae4fbd83aab4aac1fbac1fdb13c96ef6eeb5cea9f573",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/data/coco_json_loaders.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/data/collator.py",
+      "bytes": 13144,
+      "sha256": "0b197adfcd43c0d7596672b9ab38e3785fde99b8e1a5c81c5c34874b311237f5",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/data/collator.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/data/sam3_image_dataset.py",
+      "bytes": 21686,
+      "sha256": "47c2e6da396a43c1dbaeec1849488903802821d9c59782aa6bebd632a51a3bef",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/data/sam3_image_dataset.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/data/sam3_video_dataset.py",
+      "bytes": 16160,
+      "sha256": "976051db80b7e06f82de15d73ce560c3d253edc1b5be0e2f9e2cbc645153afd6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/data/sam3_video_dataset.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/data/torch_dataset.py",
+      "bytes": 1791,
+      "sha256": "0d10bbc8e5a560d740c4ec5cf5bc3ad12daf7046420768e869d298db72462535",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/data/torch_dataset.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/loss/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/loss/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/loss/loss_fns.py",
+      "bytes": 55797,
+      "sha256": "e22abfa9ade1f7a929e16633a921c87bbb35a0f4e6aa8033771113558a7738a6",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/loss/loss_fns.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/loss/mask_sampling.py",
+      "bytes": 5248,
+      "sha256": "b13ff1fc2ee1cf83ccdf66da64d824852f68c5dbfd22eb3e0c5392168294bf4c",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/loss/mask_sampling.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/loss/sam3_loss.py",
+      "bytes": 9053,
+      "sha256": "75a154bba82b21e2f5aff7804e4f30364df9e65de2e9c226d55b1c4fb9f401b1",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/loss/sam3_loss.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/loss/sigmoid_focal_loss.py",
+      "bytes": 11711,
+      "sha256": "b0c2eb0cad73af248baf5b856f6336631ffb44e59ea9bf2245ad8057e5a84a34",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/loss/sigmoid_focal_loss.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/masks_ops.py",
+      "bytes": 9903,
+      "sha256": "dfb03671491517b9e83b421a9e7af38954593599407eeb2c979d696561955928",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/masks_ops.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/matcher.py",
+      "bytes": 35176,
+      "sha256": "231f0ec9adae634359e0199932c85d3672483e135d1e8b9c72bf467da98c3dc3",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/matcher.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/nms_helper.py",
+      "bytes": 11795,
+      "sha256": "49fbb207e8b99476784a2345f3be35573a2de15f768f8f1c42da30fe3c14f640",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/nms_helper.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/optim/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/optim/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/optim/optimizer.py",
+      "bytes": 20235,
+      "sha256": "18fe54206a1ee6ea94377766159712b8741aaf73886ab39a1bc4aed2f2ee3131",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/optim/optimizer.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/optim/schedulers.py",
+      "bytes": 1205,
+      "sha256": "81ef3de959b624128b76755d24d58f4fa906d68764ce7e5c1e3ff73933ce9547",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/optim/schedulers.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/train.py",
+      "bytes": 13324,
+      "sha256": "af6073fc94562c603054dea7930c80fed9fcb4464256ffd07a8df76e521066df",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/train.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/trainer.py",
+      "bytes": 46048,
+      "sha256": "61e53b2774ffde300d48434feb08cb1ccf96e37bc0689523134d9ca8b1e95a0b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/trainer.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/transforms/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/transforms/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/transforms/basic.py",
+      "bytes": 15502,
+      "sha256": "88ecf3acbd70deb190aeeb6a3bd63c5c53fc7beabf5f198b241c63e54bae8a1b",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/transforms/basic.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/transforms/basic_for_api.py",
+      "bytes": 55192,
+      "sha256": "ed530201031a18285146273d81fc31850cf99a6bd6244f9dd4f70b9cf22326ab",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/transforms/basic_for_api.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/transforms/filter_query_transforms.py",
+      "bytes": 23495,
+      "sha256": "fb9a9f433aa4aaee197810e29fdce53cd45a24ab563740cb461deb8cce05eadf",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/transforms/filter_query_transforms.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/transforms/point_sampling.py",
+      "bytes": 13748,
+      "sha256": "0e45e8d14c9ba9cc006dab8a7b3e4b88485e144dbce99dd57c2daafaaf79b7ce",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/transforms/point_sampling.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/transforms/segmentation.py",
+      "bytes": 7052,
+      "sha256": "0a1da12aa8f102a854aff6b4eddad248179663390c031d6f04a9e6ce57fb2a99",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/transforms/segmentation.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/utils/__init__.py",
+      "bytes": 74,
+      "sha256": "54a4a7020b032f3626a40dffe391a434ff265718edd446524d9801d05519cf39",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/utils/__init__.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/utils/checkpoint_utils.py",
+      "bytes": 11962,
+      "sha256": "7786dd68a4844afa5562fc2f82eacc0b76caedff363658a5cca4e0270332a980",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/utils/checkpoint_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/utils/distributed.py",
+      "bytes": 19978,
+      "sha256": "5cab757e7acfb5f04f0a5d7310896cc7d38ec541db886820e78cfb7a15aaecb2",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/utils/distributed.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/utils/logger.py",
+      "bytes": 7676,
+      "sha256": "ba7bea9172624599a1247cba45bd4de9273d4c5708764d2b2eb34e3b606a5a05",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/utils/logger.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/train/utils/train_utils.py",
+      "bytes": 9031,
+      "sha256": "d898673e52f14cfc62e49decf80391babe553a95ba63c325a459fd874a7e9531",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/train/utils/train_utils.py"
+    },
+    {
+      "path": "third_party/efficientsam3/sam3/sam3/visualization_utils.py",
+      "bytes": 31407,
+      "sha256": "1a353fd97ac35a8802a0545a20af2db577c69237b1a22ed689e41509a3593509",
+      "backend": "D",
+      "archive": "efficientsam3",
+      "member": "sam3/sam3/visualization_utils.py"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 4246,
+      "sha256": "f524b5454e713701f545a222e6fb092b68525405140cf500be5bebc467129b83"
+    },
+    {
+      "path": "接口说明.html",
+      "bytes": 22516,
+      "sha256": "5303c4ecf49fd059b86ddea661737df335652fae7b0abb0f54d70973cf14c72f"
+    }
+  ],
+  "mutable_excluded": [
+    "runtime",
+    ".venv",
+    "__pycache__",
+    ".asset-cache"
+  ]
+}

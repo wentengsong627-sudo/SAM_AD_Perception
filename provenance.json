@@ -1,0 +1,22 @@
+{
+  "release": "20261028",
+  "derived_from_bundle": "SAM_AD_Module_20261027",
+  "changes": [
+    "Only A/D CUDA runtime files retained",
+    "Unused C branch removed from D engine",
+    "Board-only initialization paths omitted",
+    "FlyCo adapter ships changes without upstream file copies"
+  ],
+  "upstream": {
+    "upstream_commits": {
+      "sam2-official": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "third_party/efficientsam3": "bd0936c788fed8d51fa799437f05abd97b401b06"
+    },
+    "runtime_app_snapshot": "deploy/rk3588_smooth/20261025-193400/app",
+    "host_source": "flyco_ad/inference.py and models.py copied without edits",
+    "runtime_scope": "CUDA FP32, one selected instance, stride1; A cached temporal memory BF16",
+    "checkpoint_D_revision": "85b05896928f974e308f889d7ccb2eefc069de98",
+    "linux_GPU_executed": false,
+    "Unreal_required": false
+  }
+}

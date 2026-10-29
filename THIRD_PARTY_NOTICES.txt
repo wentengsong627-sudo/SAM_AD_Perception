@@ -1,0 +1,8 @@
+A uses Grounding DINO Tiny (Apache 2.0) and SAM2.1 (Apache 2.0).
+D uses EfficientSAM3 TinyViT; preserve its Apache notice and nested Meta SAM License.
+Pinned sources and exact required asset hashes are in assets.lock.json.
+Downloaded libraries and checkpoints are dependencies, not tracked copies.
+FlyCo base source is not redistributed here. Clone FC-Family/FlyCo yourself.
+The adapter installer reconstructs modified perception files from that local base.
+See flyco_adapter/FlyCo-LICENSE.txt for upstream conditions.
+No blanket license is applied to third-party code or checkpoints.

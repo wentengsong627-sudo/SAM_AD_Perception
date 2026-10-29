@@ -1,0 +1,3 @@
+# Needed only for the SDK's NumPy/OpenCV helpers and video example.
+numpy==1.26.4
+opencv-python==4.11.0.86

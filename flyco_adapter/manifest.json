@@ -1,0 +1,130 @@
+{
+  "base_commit": "992ab2b6d193f79e45ae925497228ec45def67fc",
+  "scope": "Only sam_tracking perception adapters and backend-selection launch plumbing",
+  "files": [
+    {
+      "path": "docker/overrides/perception_predictor/scripts/run_percept.sh",
+      "before_sha256": "03bdf26bf9cc0973dd1521d83bc309ab9ac75d3fa020c755305bb6e5b27f2692",
+      "after_sha256": "adb04162d6d0320abc395285827e343802bfd84aa8ad58305a21df617dcd53dc"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/launch/full_stack.launch",
+      "before_sha256": "d1d12ba07d12eec3f851078cbb3eb2f7c53251dc13ef5327eeada209ddb60823",
+      "after_sha256": "bb85abddfeff18775a04bddbcacbb914605a6f188da2c11c021809c6c9cf3a12"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/launch/perception_stack.launch",
+      "before_sha256": "41a3dcb0114b641eabd1bca7e19821d63c13ea89c402b9f201f4f71ade86b483",
+      "after_sha256": "8cdabb237d4d7ed7a3cb2020e129b2eb82897e99f0baab03b2b0ea26060ec71a"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/launch/tracking.launch",
+      "before_sha256": "4675ff9a4fdd647532c5315bff4635398121ca179f3a1a8d4ebe812ccc7eb98b",
+      "after_sha256": "4dd4ae19ea6ef8eaf292f0b00846179aa4013a799abb31954e875f16baf9e815"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/launch/tracking_with_prompt.launch",
+      "before_sha256": null,
+      "after_sha256": "2018ea90ea6d77c7e281f9f6e184b7924289cffdd37ea52e4263f5081702ffbf"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/core/depth_guidance.py",
+      "before_sha256": "9fb7898546d79551f214eb791d62591fe5dadf6c9f27dba73de9a0d071e7cb8a",
+      "after_sha256": "f5bb0f6d200c6db38891f44ad34b3f638ad8f1babbc3f8f1b95d0a81173c5f3d"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/core/tracking_pipeline.py",
+      "before_sha256": "bfe6cef062614ab95b5907485fc4dd31a9bc80613b431069eae3212f353d05be",
+      "after_sha256": "90048bc852bd6987be91ca140926daa405f6265798cb0641210b9c984287d64b"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/providers/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "795d17f947c6495fa2810cc1d8cd357bf50214c6885af7ee2f8e474349f954ef"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/providers/factory.py",
+      "before_sha256": null,
+      "after_sha256": "6ad791b8e5e59225b7f6fcaebc02c1e9420efb562fe1ef0879b7188a8baeb623"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/providers/http_text_sam_provider.py",
+      "before_sha256": null,
+      "after_sha256": "79c0d3fc62347dbde4daf08957efbd7e79b4e1ea97d94b97429688c8a312332d"
+    },
+    {
+      "path": "docker/overrides/perception_predictor/src/sam_tracking/src/sam_tracking/ros/tracking_manager.py",
+      "before_sha256": "577a45af73194be9550365b203d2c6c4ece95a0f9a657b6656c83c12a85929e6",
+      "after_sha256": "49217eb51f8c678805eaf06ae0bc743c50f3640bea3c5f7a2fba7a0943ded896"
+    },
+    {
+      "path": "docker/run.sh",
+      "before_sha256": "7c869bcb638cddade26256a107a64377a5d5f7ab7ae9f45bdab074d920399e16",
+      "after_sha256": "11285719aa67ea290b54b8e1c8b31ddaa86edbfe515875d01637f84238651c48"
+    },
+    {
+      "path": "perception_predictor/scripts/run_percept.sh",
+      "before_sha256": "03bdf26bf9cc0973dd1521d83bc309ab9ac75d3fa020c755305bb6e5b27f2692",
+      "after_sha256": "adb04162d6d0320abc395285827e343802bfd84aa8ad58305a21df617dcd53dc"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/launch/full_stack.launch",
+      "before_sha256": "d1d12ba07d12eec3f851078cbb3eb2f7c53251dc13ef5327eeada209ddb60823",
+      "after_sha256": "bb85abddfeff18775a04bddbcacbb914605a6f188da2c11c021809c6c9cf3a12"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/launch/perception_stack.launch",
+      "before_sha256": "41a3dcb0114b641eabd1bca7e19821d63c13ea89c402b9f201f4f71ade86b483",
+      "after_sha256": "8cdabb237d4d7ed7a3cb2020e129b2eb82897e99f0baab03b2b0ea26060ec71a"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/launch/tracking.launch",
+      "before_sha256": "4675ff9a4fdd647532c5315bff4635398121ca179f3a1a8d4ebe812ccc7eb98b",
+      "after_sha256": "4dd4ae19ea6ef8eaf292f0b00846179aa4013a799abb31954e875f16baf9e815"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/launch/tracking_with_prompt.launch",
+      "before_sha256": "178aab63cff4ce9a6e2d3650f33b915c8539dcd325323a637cee1d68cc5caabf",
+      "after_sha256": "2018ea90ea6d77c7e281f9f6e184b7924289cffdd37ea52e4263f5081702ffbf"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/src/sam_tracking/core/depth_guidance.py",
+      "before_sha256": "9fb7898546d79551f214eb791d62591fe5dadf6c9f27dba73de9a0d071e7cb8a",
+      "after_sha256": "f5bb0f6d200c6db38891f44ad34b3f638ad8f1babbc3f8f1b95d0a81173c5f3d"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/src/sam_tracking/core/tracking_pipeline.py",
+      "before_sha256": "bfe6cef062614ab95b5907485fc4dd31a9bc80613b431069eae3212f353d05be",
+      "after_sha256": "90048bc852bd6987be91ca140926daa405f6265798cb0641210b9c984287d64b"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/src/sam_tracking/providers/__init__.py",
+      "before_sha256": "13423a5303289a9111fd9de045b244e948d92a135f0537ad3b613c8a217cde33",
+      "after_sha256": "795d17f947c6495fa2810cc1d8cd357bf50214c6885af7ee2f8e474349f954ef"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/src/sam_tracking/providers/factory.py",
+      "before_sha256": null,
+      "after_sha256": "6ad791b8e5e59225b7f6fcaebc02c1e9420efb562fe1ef0879b7188a8baeb623"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/src/sam_tracking/providers/http_text_sam_provider.py",
+      "before_sha256": null,
+      "after_sha256": "79c0d3fc62347dbde4daf08957efbd7e79b4e1ea97d94b97429688c8a312332d"
+    },
+    {
+      "path": "perception_predictor/src/sam_tracking/src/sam_tracking/ros/tracking_manager.py",
+      "before_sha256": "577a45af73194be9550365b203d2c6c4ece95a0f9a657b6656c83c12a85929e6",
+      "after_sha256": "49217eb51f8c678805eaf06ae0bc743c50f3640bea3c5f7a2fba7a0943ded896"
+    }
+  ],
+  "protected_interfaces": [
+    "pointcloud_projector.py",
+    "perception_msgs",
+    "mesh_predict",
+    "planner_simulator"
+  ],
+  "model_module_package": "SAM_AD_Module_20261027.zip",
+  "A_endpoint": "http://127.0.0.1:8850",
+  "D_endpoint": "http://127.0.0.1:8851"
+}

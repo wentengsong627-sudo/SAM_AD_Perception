@@ -1,0 +1,14 @@
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+models/
+sam2-official/
+third_party/
+runtime/
+runtime_app/tmp/
+client-output/
+*.log
+.env
+.env.*
+.asset-cache/

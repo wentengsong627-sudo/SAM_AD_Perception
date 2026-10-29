@@ -1,0 +1,129 @@
+{
+  "release": "20261028",
+  "passed": true,
+  "host": "Windows NVIDIA RTX 5060 Laptop GPU 8GB",
+  "dependency_environment": "Existing Python 3.12.7 with CUDA PyTorch 2.7.1+cu128; not a fresh installation proof",
+  "contract_regression": {
+    "tests": 9,
+    "passed": 9,
+    "fake_pipeline": true
+  },
+  "wire_GPU_smoke": {
+    "A": {
+      "frames": 40,
+      "visible_frames": 38,
+      "output_ids": [
+        1
+      ],
+      "same_frame_duplicate_did_not_advance": true,
+      "out_of_order_rejected": true,
+      "hint_and_explicit_target_switch_passed": true,
+      "session_released": true,
+      "input_sequence_sha256": "0ca00003cff4b0723199dc7f790c4c15c516e2adf048360d4fc8d7b139b0c79e",
+      "client_roundtrip_ms": {
+        "mean": 279.74551749939565,
+        "P95": 323.1940649944583,
+        "max": 567.8358000004664
+      }
+    },
+    "D": {
+      "frames": 40,
+      "visible_frames": 38,
+      "output_ids": [
+        1
+      ],
+      "same_frame_duplicate_did_not_advance": true,
+      "out_of_order_rejected": true,
+      "hint_and_explicit_target_switch_passed": true,
+      "session_released": true,
+      "input_sequence_sha256": "0ca00003cff4b0723199dc7f790c4c15c516e2adf048360d4fc8d7b139b0c79e",
+      "client_roundtrip_ms": {
+        "mean": 244.75926749728387,
+        "P95": 263.03622998530045,
+        "max": 268.54269998148084
+      }
+    }
+  },
+  "actual_FlyCo_core_smoke": {
+    "A": {
+      "video_frames": 40,
+      "visible_mask_frames": 39,
+      "observed_IDs": [
+        1
+      ],
+      "input_sequence_sha256": "d7ab60488807aa67785c1c37f6e528adb2d0f0d98f81749040785753a0e3161f",
+      "same_callback_one_model_prediction": true,
+      "RGB_and_binary_mask_integrity": true,
+      "original_RGBA_contract": true,
+      "explicit_target_switch": true,
+      "depth_hint_preserves_reference": true,
+      "depth_hint_not_counted_as_recovery": true,
+      "synthetic_projection": {
+        "original_projector_math_executed": true,
+        "synthetic_points": 5,
+        "selected_points": 1,
+        "selected_world_xyz": [
+          1,
+          2,
+          8
+        ],
+        "ROS_message_IO": "explicit test shim; not ROS transport or real depth acceptance"
+      }
+    },
+    "D": {
+      "video_frames": 40,
+      "visible_mask_frames": 38,
+      "observed_IDs": [
+        1
+      ],
+      "input_sequence_sha256": "d7ab60488807aa67785c1c37f6e528adb2d0f0d98f81749040785753a0e3161f",
+      "same_callback_one_model_prediction": true,
+      "RGB_and_binary_mask_integrity": true,
+      "original_RGBA_contract": true,
+      "explicit_target_switch": true,
+      "depth_hint_preserves_reference": true,
+      "depth_hint_not_counted_as_recovery": true,
+      "synthetic_projection": {
+        "original_projector_math_executed": true,
+        "synthetic_points": 5,
+        "selected_points": 1,
+        "selected_world_xyz": [
+          1,
+          2,
+          8
+        ],
+        "ROS_message_IO": "explicit test shim; not ROS transport or real depth acceptance"
+      }
+    }
+  },
+  "installer": {
+    "passed": true,
+    "reconstructed_files_match_validated_plugin": 23,
+    "protected_files_unchanged": 3689,
+    "repeat_install_noop": true,
+    "local_edit_conflict_preserved": true,
+    "base_commit": "992ab2b6d193f79e45ae925497228ec45def67fc"
+  },
+  "limits": {
+    "manually_annotated_accuracy_measured": false,
+    "fresh_Python_environment_install_executed": false,
+    "online_asset_download_executed": false,
+    "local_bundle_asset_SHA256_verified": 284,
+    "Linux_GPU_executed": false,
+    "ROS_transport_executed": false,
+    "Unreal_executed": false,
+    "mesh_prediction_executed": false,
+    "flight_executed": false,
+    "timings": "Smoke-test client roundtrip with no display; not a ranking benchmark or video playback FPS"
+  },
+  "asset_source_git_object_check": {
+    "sam2_pinned_source_files": 44,
+    "EfficientSAM3_pinned_source_files": 231,
+    "all_match": true
+  },
+  "Word_document_QA": {
+    "pages": 9,
+    "renderer": "Installed Microsoft Word PDF export; pypdfium2 page rasterization",
+    "all_pages_visually_inspected": true
+  }
+}
